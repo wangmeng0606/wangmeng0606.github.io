@@ -1,7 +1,16 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Design surface coatings with biomolecules"
+excerpt: "Mineral scaling remains a major problem associated with reverse osmosis operations, which results in higher operation and maintenance costs due to permeability loss, decreased rejection of solute, and irreversible membrane deterioration. <br/><img src='/images/500x300.png'>"
 collection: portfolio
----
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+---
+Due to the importance of mineral scaling on membranes, recent studies have been conducted to investigate how would different membrane surface properties affect mineral scaling. For example, Mi and Elimelech found that different membranes might have distinct gypsum scaling mechanisms due to different interactions between the precipitates and functional groups on the membrane surfaces. Similarly, membrane modification by tuning the surface chemistry has also been demonstrated to affect mineral scaling. For instance, in our recent study, gypsum scaling on GO-modified membranes was shown to be inhibited due to changes on the surface properties of the membrane. In this case, the GO coating enhanced the hydrophilicity and increased the negative charge on the membrane surface, thereby causing less reduction of the membrane permeability.  Besides, zwitterion polymer brushes were also introduced to modify RO membranes, the delay of gypsum surface nucleation and crystal adsorption were observed on the superhydrophillic surfaces, thus exhibiting a much smaller flux decline than that of control unmodified membranes. Moreover, organic biomolecules (proteins, polysaccharides, and organic acid) are commonly present in natural water and can also attach to the membrane surface, thus altering the membrane surface properties.  Liu and Mi revealed that humic acid (HA) and sodium alginate (SA) facilitated gypsum scaling and aggravated the flux decay of the membrane, while bovine serum albumin (BSA) inhibited gypsum scaling and retarded the flux decline. Those organic foulants were also found to affect the morphology of gypsum precipitates, but the role of their amounts and morphologies on flux decline were not elucidated.  Similar investigations, with almost identical conclusions, were also conducted by Wang et al.  and Bennecke et al. These previous studies have shed some lights on general information gaps related to the impact of membrane surface properties on the types of crystals formed during scaling. However, none of them tried to understand the effect of mass, morphology, growth orientation, and crystallinity of the mineral precipitates on the membrane in the presence or absence of organic molecules and their roles on the permeability decline of the membrane.
+
+<br/><img src='/images/Orientation.png'>
+
+Gypsum scaling tests on bare and bovine serum albumin (BSA)-conditioned membranes were conducted under different saturation indices. Results show that a longer scaling period was required for BSA-conditioned membranes to reach the same membrane permeate flux decline as bare membranes. Though the final reduced permeability was the same for both two membranes, the masses of the mineral precipitates on BSA-conditioned membranes were around two times more than those on bare membranes. Further mineral characterizations confirmed that different permeability decay rates of both types of the membrane were attributed to the differences in growth orientations rather than amounts of gypsum precipitates. Moreover, BSA-conditioned layers with high carboxylic density and specific molecular structure could stabilize bassanite and disrupt the oriented growth to inhibit the formation of needle-like gypsum crystals as observed on bare membranes, thus resulting in lower surface coverage with scales on membranes and alleviating the detrimental scaling effect on membrane permeability.
+
+
+
+
+
