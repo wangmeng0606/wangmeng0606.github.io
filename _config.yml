@@ -85,7 +85,7 @@ author:
   bio              : "Postdoctoral Associate"
   location         : "Austin,TX"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=6e9ZJqYAAAAJ&hl=zh-CN"
   email            :
   researchgate     :  "https://www.researchgate.net/profile/Meng-Wang-76"
@@ -102,8 +102,8 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/meng-wang-872491171/"
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "https://www.linkedin.com/in/meng-wang-872491171"
+  orcid            : "https://orcid.org/0000-0002-1454-4020"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
