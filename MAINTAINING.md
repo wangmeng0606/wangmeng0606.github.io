@@ -25,7 +25,7 @@ If `_config.yml` changes, stop the preview with `Ctrl+C` and start it again.
 | Homepage introduction and featured sections | `_pages/about.md` |
 | Job title, profile photo, institution, and social profiles | `_config.yml` |
 | Navigation labels and order | `_data/navigation.yml` |
-| CV | `_pages/cv.md` |
+| Downloadable CV | Add the PDF to `files/`, then set `author.cv_pdf` in `_config.yml` |
 | Publications | `_publications/` |
 | Research-project summaries | `_portfolio/` |
 | News | `_posts/` |
@@ -37,7 +37,23 @@ Do not edit `_site/` or `assets/css/main.css`. They are generated every time Jek
 
 File and folder names are case-sensitive after deployment. For example, `Profile.jpg` and `profile.jpg` are different files on GitHub Pages.
 
-## 3. Add a publication
+## 3. Add or replace the PDF CV
+
+Copy your PDF into the `files/` folder. A clear filename is recommended:
+
+```text
+files/Meng-Wang-CV.pdf
+```
+
+Then edit the `author` section in `_config.yml`:
+
+```yaml
+cv_pdf: "/files/Meng-Wang-CV.pdf"
+```
+
+The **Download CV** button will automatically appear on the homepage. To replace the CV later, overwrite that PDF with a newer version using the same filename. To hide the button, leave `cv_pdf` blank.
+
+## 4. Add a publication
 
 Create a file in `_publications/` named with the publication date and a short title:
 
@@ -67,7 +83,7 @@ Abstract: Add the abstract here.
 
 If you provide a PDF, place it in `files/` and make the capitalization and spaces in the link match the filename exactly.
 
-## 4. Add a news update
+## 5. Add a news update
 
 Create a file in `_posts/`:
 
@@ -89,7 +105,7 @@ tags:
 Write the update here.
 ```
 
-## 5. Publish an update
+## 6. Publish an update
 
 Before editing, synchronize your local copy:
 
@@ -109,7 +125,7 @@ git push origin master
 
 GitHub Pages automatically rebuilds the public site after the push. The deployment status appears in the repository's **Actions** tab. It may take a few minutes before the new version is visible.
 
-## 6. Update Jekyll dependencies
+## 7. Update Jekyll dependencies
 
 Do this occasionally—not for every content update:
 
@@ -120,18 +136,24 @@ bundle exec jekyll build
 
 Commit both `Gemfile` and `Gemfile.lock` when they change. Do not delete `Gemfile.lock` during a normal update; it records the tested dependency versions.
 
-## 7. Routine maintenance checklist
+## 8. Add Team or Facilities later
+
+The current public navigation intentionally contains only **Home**, **Research**, and **Publications**. When you are ready to introduce a research group, create `_pages/team.md` with `permalink: /team/`, place member photographs in `images/team/`, and add the Team link to `_data/navigation.yml`.
+
+A Facilities page can follow the same pattern with `permalink: /facilities/` and photographs in `images/facilities/`. Add these pages only when the content is ready so the navigation stays focused.
+
+## 9. Routine maintenance checklist
 
 Every month or after a career update:
 
 - Confirm the current job title and institution in `_config.yml` and `_pages/about.md`.
 - Add new papers and confirm DOI and PDF links.
-- Update the CV and remove old words such as “expected” once a degree or role is complete.
+- Replace the PDF CV and remove old words such as “expected” once a degree or role is complete.
 - Check the homepage on both a phone-sized window and a desktop-sized window.
 - Verify the profile photo, research figures, external profiles, and downloadable files.
 - Run `bundle exec jekyll build` before pushing.
 
-## 8. Common problems
+## 10. Common problems
 
 ### `ruby` or `bundle` is not recognized
 

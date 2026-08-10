@@ -6,6 +6,7 @@ date: 2021-11-17
 venue: 'Environmental Science & Technology'
 paperurl: 'https://doi.org/10.1021/acs.est.1c04143'
 citation: 'Meng Wang, Bo Cao, Yandi Hu, and Debora F. Rodrigues. (2021). &quot; Mineral Scaling on Reverse Osmosis Membranes: Role of Mass, Orientation, and Crystallinity on Permeability.&quot; <i>Environmental Science & Technology 55 (23), 16110-16119</i>.'
+authors_short: '<strong>Wang, M.</strong>, Cao, B., Hu, Y., Rodrigues, D. F.'
 
 ---
 This paper is about Mineral Scaling on Reverse Osmosis Membranes: Role of Mass, Orientation, and Crystallinity on Permeability.

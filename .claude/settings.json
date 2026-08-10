@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -L -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://www.sciencedirect.com/science/article/pii/S0011916425010215\" -o /c/Users/SULIZH~1/AppData/Local/Temp/claude/c--Mengresearch-wangmeng0606-github-io/23ee6d0e-8501-495f-a0cc-f695db5d3ce4/scratchpad/desal.html -w \"HTTP_CODE:%{http_code}\\\\n\")",
+      "Bash(curl -sk -L \"https://html.rhhz.net/syjxzz/html/20181112.htm\" -o /c/Users/SULIZH~1/AppData/Local/Temp/claude/c--Mengresearch-wangmeng0606-github-io/23ee6d0e-8501-495f-a0cc-f695db5d3ce4/scratchpad/paper4.html --max-time 30 -A \"Mozilla/5.0\")",
+      "Bash(echo \"exit:$?\")",
+      "Bash(python -c ' *)",
+      "WebFetch(domain:api.unpaywall.org)",
+      "WebFetch(domain:cnki.hcnu.edu.cn)",
+      "WebFetch(domain:api.core.ac.uk)"
+    ]
+  }
+}

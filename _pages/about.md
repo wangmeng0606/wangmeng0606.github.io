@@ -16,8 +16,9 @@ redirect_from:
     <div class="home-hero__actions">
       <a class="button button--primary" href="{{ site.baseurl }}/portfolio/">Explore my research</a>
       <a class="button button--secondary" href="{{ site.baseurl }}/publications/">View publications</a>
+      {% if site.author.cv_pdf %}<a class="button button--secondary" href="{{ site.baseurl }}{{ site.author.cv_pdf }}">Download CV</a>{% endif %}
     </div>
-    <p class="home-hero__affiliation"><span aria-hidden="true"></span> Postdoctoral researcher at The University of Texas at Austin</p>
+    <!-- <p class="home-hero__affiliation"><span aria-hidden="true"></span> Postdoctoral researcher at The University of Texas at Austin</p> -->
   </div>
 
   <div class="home-hero__portrait">
@@ -26,7 +27,7 @@ redirect_from:
     </div>
     <div class="portrait-note">
       <strong>Meng Wang, Ph.D.</strong>
-      <span>Environmental Engineer</span>
+      <span>Postdoctoral researcher at The University of Texas at Austin</span>
     </div>
   </div>
 </section>
@@ -38,8 +39,11 @@ redirect_from:
   </div>
   <div class="intro-copy">
     <p>I am a postdoctoral researcher in the Department of Civil, Architectural and Environmental Engineering at The University of Texas at Austin, working with <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>. My current work examines hydration-dependent ion transport and ion association in polymer systems.</p>
-    <p>I earned my Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.cive.uh.edu/faculty/rodrigues">Prof. Debora F. Rodrigues</a>. My doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination.</p>
-    <a class="text-link" href="{{ site.baseurl }}/cv/">Read my full biography and CV <span aria-hidden="true">→</span></a>
+    <p>I earned my Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Prof. Debora F. Rodrigues</a>. My doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination.</p>
+    <div class="about-links">
+      <a class="text-link" href="{{ site.author.googlescholar }}">View my Google Scholar profile <span aria-hidden="true">↗</span></a>
+      {% if site.author.cv_pdf %}<a class="text-link" href="{{ site.baseurl }}{{ site.author.cv_pdf }}">Download my CV <span aria-hidden="true">↓</span></a>{% endif %}
+    </div>
   </div>
 </section>
 

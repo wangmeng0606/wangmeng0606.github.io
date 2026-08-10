@@ -6,6 +6,7 @@ date: 2018-07-10
 venue: 'Greenhouse Gases: Science and Technology'
 paperurl: 'https://doi.org/10.1002/ghg.1803'
 citation: 'Haizhu Wang,  Meng Wang,  Bing Yang,  Qun Lu,  Yong Zheng,  Heqian Zhao, (2018). &quot; Numerical study of supercritical CO2 and proppant transport in different geometrical fractures.&quot; <i>Greenhouse Gases: Science and Technology 8: 898-910</i>.'
+authors_short: 'Wang, H., <strong>Wang, M.</strong>, Yang, B., Lu, Q., Zheng, Y., Zhao, H.'
 
 ---
 This paper simulated proppant transport with supercritial carbon dioxide in different geometrical fractures 

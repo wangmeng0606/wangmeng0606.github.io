@@ -13,7 +13,7 @@ Education
 ======
 * B.S. in Petroleum Engineering, Northeastern Petroleum University, 2015
 * M.S. in Petroleum Engineering, China University of Petroleum, 2018
-* M.S. in Computer Science,      Georgia Institute of Technology, 2024 (expected)
+* M.S. in Computer Science,      Georgia Institute of Technology, 2026
 * Ph.D. in Environmental Engineering, University of Houston, 2023
 
 Research experience
@@ -48,29 +48,6 @@ Research experience
      * Wrote a simulator with over 10k lines of code in C/C++ to calculate the initiation pressure; 
      * Published results on Journal of Geophysics and Engineering 
   * Supervisor: Professor Yuwei Li
-
-Work experience
-======
-
-* Consultant Intern at Baker Tilly Beijing (May. 2018 - Jul. 2018)
-     * Provided support to the project manager in conducting internal audit consulting for clients.
-     * Contributed to the preparation of proposals for client talent promotion evaluations.
-     * Assisted with project status investigations, questionnaire creation, and report writing.
-* Research Intern at ConocoPhillips China Incorporation (Jul. 2017 - Sept. 2017)
-     *	Managed oil well production data using PL/SQL, and performed data visualization with Python
-     *	Analyzed drilling daily logs and identified pros and cons of various wellbore structure designs 
-     *	Data processing of core sample test and sand size distribution analysis using MATLAB 
-     *	Proppant size screening for Peng Lai oilfield based on the sand size distribution analysis
-
-
-Skills
-======
-* PROGRAMMING SKILLS:
-  * C/C++, Java, Python, MATLAB, Git, PyTorch, Linux Shell, HTML/CSS, SQL, PL/SQL, MATLAB
-* FRAMEWORKS & LIBRARIES
-  * LLVM, Spring Boot, Spring Data JPA, JUnit4
-* TOOLS & PLATFORMS
-  * Maven, Android Studio, SQL plus, Docker, Git, GitHub, Postman, Colab
 
 Awards
 ======

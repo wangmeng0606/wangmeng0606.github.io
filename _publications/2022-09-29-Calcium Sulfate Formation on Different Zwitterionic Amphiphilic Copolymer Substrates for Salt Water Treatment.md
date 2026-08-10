@@ -6,6 +6,7 @@ date: 2022-09-29
 venue: 'ACS Applied Polymer Materials'
 paperurl: 'https://doi.org/10.1021/acsapm.2c01014'
 citation: 'Meng Wang, Hoang Nguyen, Samuel J. Lounder, Ayse Asatekin, and Debora F. Rodrigues,(2022). &quot;Calcium Sulfate Formation on Different Zwitterionic Amphiphilic Copolymer Substrates for Salt Water Treatment.&quot; <i>ACS Applied Polymer Materials 4 (10), 7090-7101</i>.'
+authors_short: '<strong>Wang, M.</strong>, Nguyen, H., Lounder, S.J., Asatekin, A., Rodrigues, D. F.'
 
 ---
 This paper is about Calcium Sulfate Formation on Different Zwitterionic Amphiphilic Copolymer Substrates for Salt Water Treatment.

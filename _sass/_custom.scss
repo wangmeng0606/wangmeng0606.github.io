@@ -325,10 +325,12 @@ button:focus-visible {
 }
 
 .portrait-note {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   width: 82%;
-  margin: -2.1rem auto 0;
+  margin: 0.9rem auto 0;
   padding: 0.9rem 1.1rem;
   border: 1px solid rgba($navy, 0.08);
   border-radius: 14px;
@@ -347,6 +349,14 @@ button:focus-visible {
     color: $ink-muted;
     font-size: 0.68rem;
   }
+}
+
+.about-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.4rem;
+  align-items: center;
+  margin-top: 1.2rem;
 }
 
 .home-section {
@@ -602,8 +612,7 @@ button:focus-visible {
   }
 }
 
-.research-card__area,
-.publication-card__venue {
+.research-card__area {
   margin: 0;
   color: $copper;
   font-size: 0.66rem;
@@ -636,51 +645,56 @@ button:focus-visible {
   }
 }
 
-.publication-list {
+.publication-legend {
+  margin: 0 0 1.5rem;
+  color: $ink-muted;
+  font-size: 0.72rem;
+  font-style: italic;
+}
+
+.publication-years {
   border-top: 1px solid $border-color;
 }
 
-.publication-card {
-  display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
-  gap: 1.2rem;
-  padding: 1.5rem 0;
+.publication-year-group {
+  padding: 1.7rem 0;
   border-bottom: 1px solid $border-color;
-
-  h2 {
-    margin: 0.35rem 0 0.7rem;
-    font-size: 1.2rem;
-    line-height: 1.35;
-  }
-
-  h2 a {
-    color: $navy;
-    text-decoration: none;
-
-    &:hover {
-      color: $teal;
-    }
-  }
 }
 
-.publication-card__year {
-  padding-top: 0.05rem;
+.publication-year-heading {
+  margin: 0 0 0.9rem;
   color: $teal;
   font-family: $serif;
   font-size: 1.35rem;
   font-weight: 700;
 }
 
-.publication-card__actions {
+.publication-year-group--in-prep .publication-year-heading {
+  color: $copper;
+}
+
+.publication-year-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.publication-entry {
+  color: $navy;
+  font-size: 0.92rem;
+  line-height: 1.65;
 
   a {
     color: $teal;
-    font-size: 0.7rem;
-    font-weight: 700;
     text-decoration: none;
+    word-break: break-word;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -818,13 +832,12 @@ button:focus-visible {
     padding: 2rem 1.3rem;
   }
 
-  .research-note,
-  .publication-card {
+  .research-note {
     grid-template-columns: 1fr;
   }
 
-  .publication-card__year {
-    font-size: 1rem;
+  .publication-year-heading {
+    font-size: 1.1rem;
   }
 
   .page__title {

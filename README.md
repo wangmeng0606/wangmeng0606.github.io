@@ -15,7 +15,7 @@ For the complete content, preview, publishing, and troubleshooting workflow, see
 
 ## Main folders
 
-- `_pages/` — homepage, CV, research index, and publications index
+- `_pages/` — homepage, research index, publications index, and archived supporting pages
 - `_publications/` — one Markdown file per publication
 - `_portfolio/` — detailed research-project pages
 - `_posts/` — dated news posts
