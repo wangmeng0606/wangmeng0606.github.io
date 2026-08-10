@@ -3,12 +3,34 @@ layout: archive
 title: "Research"
 permalink: /portfolio/
 author_profile: true
+excerpt: "Research on ion transport, interfacial chemistry, mineral scaling, and membrane materials."
 ---
 
-{% include base_path %}
+<div class="page-intro">
+  <p class="eyebrow">Research</p>
+  <p class="page-intro__lead">I investigate how water, ions, polymers, and mineral surfaces interact—and how those interactions can inform better materials for water treatment.</p>
+</div>
 
+<div class="research-grid">
+  {% assign research_projects = site.portfolio | sort: "order" %}
+  {% for project in research_projects %}
+    <article class="research-card">
+      {% if project.header.teaser %}
+        <a class="research-card__image" href="{{ site.baseurl }}{{ project.url }}" tabindex="-1" aria-hidden="true">
+          <img src="{{ site.baseurl }}/images/{{ project.header.teaser }}" alt="">
+        </a>
+      {% endif %}
+      <div class="research-card__body">
+        <p class="research-card__area">{{ project.area }}</p>
+        <h2><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></h2>
+        <p>{{ project.excerpt }}</p>
+        <a class="text-link" href="{{ site.baseurl }}{{ project.url }}">Read the project <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  {% endfor %}
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<div class="research-note">
+  <strong>Current direction</strong>
+  <p>Hydration-dependent ion transport and ion pairing in polymer systems, spanning rigorously dry to highly hydrated conditions.</p>
+</div>

@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Meng Wang/Personal Website"
+title                    : "Meng Wang"
 title_separator          : "-"
 name                     : &name "Meng Wang"
-description              : &description "Meng's blog"
+description              : &description "Environmental engineer studying ion transport, membrane materials, mineral scaling, and water treatment."
 url                      : https://wangmeng0606.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "wangmeng0606/wangmeng0606.github.io"
@@ -62,18 +62,22 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og-card.png" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Meng Wang"
+  links:
+    - "https://scholar.google.com/citations?user=6e9ZJqYAAAAJ&hl=en"
+    - "https://orcid.org/0000-0002-1454-4020"
+    - "https://www.linkedin.com/in/meng-wang-872491171"
+    - "https://github.com/wangmeng0606"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # Add a supported analytics provider only when you have a tracking ID.
   google:
     tracking_id          :
 
@@ -81,10 +85,10 @@ analytics:
 # Site Author
 author:
   name             : "Meng Wang"
-  avatar           : "profile.png"
-  bio              : "Postdoctoral Associate"
-  location         : "Austin,TX"
-  employer         :
+  avatar           : "Profile.jpg"
+  bio              : "Postdoctoral Researcher · Environmental Engineering"
+  location         : "Austin, TX"
+  employer         : "The University of Texas at Austin"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=6e9ZJqYAAAAJ&hl=zh-CN"
   email            :

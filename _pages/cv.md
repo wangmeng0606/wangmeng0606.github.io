@@ -14,7 +14,7 @@ Education
 * B.S. in Petroleum Engineering, Northeastern Petroleum University, 2015
 * M.S. in Petroleum Engineering, China University of Petroleum, 2018
 * M.S. in Computer Science,      Georgia Institute of Technology, 2024 (expected)
-* Ph.D in Environmental Engineering, University of Houston, 2023
+* Ph.D. in Environmental Engineering, University of Houston, 2023
 
 Research experience
 ======
@@ -34,7 +34,7 @@ Research experience
   * Supervisor: Professor Debora F. Rodrigues
   
 * Fall 2015 - Summer 2018: Research Assistant
-  * Chinal University of Petroleum, Beijing
+  * China University of Petroleum, Beijing
   * Duties included:
      * Performed rock-core scale fracturing with the supercritical CO2 (SC-CO2) fluid; 
      * Simulated proppant transport with SC-CO2 in fractures using ANSYS FLUENT; Designed experimental devices for proppant transport with SC-CO2 in the fracture;
@@ -52,7 +52,7 @@ Research experience
 Work experience
 ======
 
-* Consulatant Intern at Baker Tilly Beijing (May. 2018 - Jul. 2018)
+* Consultant Intern at Baker Tilly Beijing (May. 2018 - Jul. 2018)
      * Provided support to the project manager in conducting internal audit consulting for clients.
      * Contributed to the preparation of proposals for client talent promotion evaluations.
      * Assisted with project status investigations, questionnaire creation, and report writing.

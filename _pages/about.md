@@ -1,20 +1,104 @@
 ---
+layout: home
 permalink: /
-title: "About"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: "Home"
+excerpt: "Meng Wang is an environmental engineer studying ion transport, membrane materials, mineral scaling, and water treatment."
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hello! I’m Meng Wang, a Postdoctoral Associate at the University of Texas at Austin in the Department of Civil, Architectural and Environmental Engineering, under the guidance of [Dr. Lynn Katz](https://www.caee.utexas.edu/people/faculty/faculty-directory/katz). I am an engineering Ph.D. student with expertise in petroleum engineering and environmental chemistry. Additionally, I possess strong programming, analytical, and mathematical skills, along with significant experience in backend web and Android app development, as well as machine/deep learning model training. Over the course of 5+ years, I have gained extensive research experience in constructing models and analyzing data. My proficiency includes programming in C/C++ and Java. I am known for my diligence as a team player and a quick learner in the engineering field.
+<section class="home-hero" aria-labelledby="home-heading">
+  <div class="home-hero__content">
+    <p class="eyebrow">Environmental engineering · Materials · Water</p>
+    <h1 id="home-heading">Understanding interfaces.<br><span>Designing better water systems.</span></h1>
+    <p class="home-hero__lead">I study how polymer chemistry, hydration, and interfacial processes govern ion transport, mineral scaling, and membrane performance.</p>
+    <div class="home-hero__actions">
+      <a class="button button--primary" href="{{ site.baseurl }}/portfolio/">Explore my research</a>
+      <a class="button button--secondary" href="{{ site.baseurl }}/publications/">View publications</a>
+    </div>
+    <p class="home-hero__affiliation"><span aria-hidden="true"></span> Postdoctoral researcher at The University of Texas at Austin</p>
+  </div>
 
-My research
-======
-My research interests cover diverse aspects of environmental engineering related to water/membrane treatment process. My current research topic focuses on [the impact of hydration on ion transport spanning rigorously dry to highly hydrated systems, including ion pairing/association in hydrated polymer systems](https://mwet.utexas.edu/research-themes/gap-1). As a Ph.D.candidate in Environmental Engineering from [Prof. Debora F. Rodrigues’s group at the University of Houston](https://www.cive.uh.edu/faculty/rodrigues), my past research experiences mainly focused on membrane modifications to improve the membrane surface anti-scaling and antifouling performance. My Ph.D. research has been focused on the development and characterization of novel membrane materials such as Graphene oxide and Zwitterion Amphiphilic Copolymers for the desalination treatment. Through my work, I have gained extensive experience in polymer coatings synthesis and characterizations, as well as in the use of various analytical techniques to evaluate the performance of these materials. In addition, I am interested in understanding how the surface chemistry of membrane coatings affects mineral nucleation and growth process at the organic-water interface, and how these mechanistic study findings influence membrane surface anti-scaling performance.
+  <div class="home-hero__portrait">
+    <div class="portrait-frame">
+      <img src="{{ site.baseurl }}/images/Profile.jpg" alt="Portrait of Meng Wang">
+    </div>
+    <div class="portrait-note">
+      <strong>Meng Wang, Ph.D.</strong>
+      <span>Environmental Engineer</span>
+    </div>
+  </div>
+</section>
 
+<section class="home-section home-section--intro" aria-labelledby="about-heading">
+  <div class="section-heading">
+    <p class="eyebrow">About</p>
+    <h2 id="about-heading">Research across scales, from molecules to membranes.</h2>
+  </div>
+  <div class="intro-copy">
+    <p>I am a postdoctoral researcher in the Department of Civil, Architectural and Environmental Engineering at The University of Texas at Austin, working with <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>. My current work examines hydration-dependent ion transport and ion association in polymer systems.</p>
+    <p>I earned my Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.cive.uh.edu/faculty/rodrigues">Prof. Debora F. Rodrigues</a>. My doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination.</p>
+    <a class="text-link" href="{{ site.baseurl }}/cv/">Read my full biography and CV <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 
-My past experience
-======
-I earned my Ph.D. degree from [the Department of Civil, & Environmental Engineering the University of Houston](https://www.cive.uh.edu/) in 2023, working with Prof. Debora F. Rodrigues. My dissertation title is "Mechanistic Study on Polymer Coatings to Control Mineral Scaling in Desalination Treatment". Before that, I earned my Master of Science degree from [the department of Petroleum Engineering at China University of Petroleum(Beijing)](https://www.cup.edu.cn/oil/) in 2018 and a Bachelor’s degree from [the department of Petroleum Engineering at Northeastern Petroleum University](http://sygcxy.nepu.edu.cn/index.htm) in 2015. My thesis title for the master degree is:" Numerical Study of Proppant Transport with Supercritical CO2 in Fractures". The thesis title for a bachelor's degree is "Hydraulic Fracturing Model Featuring Initiation Beyond the Wellbore Wall For Directional Well in Coal Bed".
+<section class="home-section" aria-labelledby="focus-heading">
+  <div class="section-heading section-heading--wide">
+    <p class="eyebrow">Research focus</p>
+    <h2 id="focus-heading">Three connected questions guide my work.</h2>
+  </div>
+  <div class="focus-grid">
+    <article class="focus-card">
+      <span class="focus-card__number">01</span>
+      <h3>Ion transport</h3>
+      <p>How hydration and ion pairing shape transport through polymeric materials.</p>
+    </article>
+    <article class="focus-card focus-card--accent">
+      <span class="focus-card__number">02</span>
+      <h3>Interfacial chemistry</h3>
+      <p>How surface chemistry influences mineral nucleation, growth, and adhesion.</p>
+    </article>
+    <article class="focus-card">
+      <span class="focus-card__number">03</span>
+      <h3>Membrane performance</h3>
+      <p>How material design can reduce scaling and biofouling in water treatment.</p>
+    </article>
+  </div>
+</section>
+
+<section class="home-section" aria-labelledby="publications-heading">
+  <div class="section-heading section-heading--split">
+    <div>
+      <p class="eyebrow">Selected work</p>
+      <h2 id="publications-heading">Recent publications</h2>
+    </div>
+    <a class="text-link" href="{{ site.baseurl }}/publications/">All publications <span aria-hidden="true">→</span></a>
+  </div>
+
+  <div class="featured-publications">
+    {% assign featured_publications = site.publications | sort: "date" | reverse %}
+    {% for publication in featured_publications limit:3 %}
+      <article class="featured-publication">
+        <div class="featured-publication__meta">
+          <span>{{ publication.date | date: "%Y" }}</span>
+          <span>{{ publication.venue }}</span>
+        </div>
+        <h3><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></h3>
+        <a class="publication-link" href="{{ publication.paperurl }}">DOI / publisher <span aria-hidden="true">↗</span></a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="home-contact" aria-labelledby="connect-heading">
+  <div>
+    <p class="eyebrow">Connect</p>
+    <h2 id="connect-heading">Interested in membranes, polymers, or ion transport?</h2>
+  </div>
+  <div class="home-contact__links">
+    <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
+    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
+    <a href="{{ site.author.orcid }}">ORCID <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
