@@ -7,6 +7,7 @@ venue: 'Petroleum'
 paperurl: 'https://doi.org/10.1016/j.petlm.2017.08.003'
 citation: 'Haizhu Wang, Gensheng Li, Lichuan Zhao, Youwen Wang, Yun Liu, Qingling Liu, Meng Wang, Fei Gao, Meng Cai, (2018). &quot;Throttle characteristics of multi-stage circumfluence nozzle during the separate-layer injection of CO2.&quot; <i>Petroleum 4 (2), 187-197</i>.'
 authors_short: 'Wang, H., Li, G., Zhao, L., Wang, Y., Liu, Y., Liu, Q., <strong>Wang, M.</strong>, Gao, F., Cai, M.'
+authors_full: 'Wang, H., Li, G., Zhao, L., Wang, Y., Liu, Y., Liu, Q., <strong>Wang, M.</strong>, Gao, F., & Cai, M.'
 
 ---
 This paper designs and tests a large-diameter multi-stage circumfluence nozzle to improve throttle performance during separate-layer CO2 injection.

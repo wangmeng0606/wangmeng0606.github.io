@@ -7,6 +7,7 @@ venue: '60 Years of the Loeb-Sourirajan Membrane Principles, New Materials, Mode
 paperurl: 'https://doi.org/10.1016/B978-0-323-89977-2.00013-0'
 citation: 'Harout Arabaghian, Meng Wang, John Ordonez, Debora F. Rodrigues, (2022). &quot;Zwitterionic polymers in biofouling and inorganic fouling mechanisms.&quot; <i>60 Years of the Loeb-Sourirajan Membrane, 33-70, ISBN 9780323899772</i>.'
 authors_short: 'Arabaghian, H.#, <strong>Wang, M.</strong>#, Ordonez, J., Rodrigues, D. F.'
+authors_full: 'Arabaghian, H.#, <strong>Wang, M.</strong>#, Ordonez, J., & Rodrigues, D. F.'
 note: 'Book Chapter'
 ---
 This paper reviewed Zwitterionic polymers in biofouling and inorganic fouling mechanisms

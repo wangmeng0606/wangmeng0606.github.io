@@ -7,6 +7,7 @@ venue: 'Journal of China Coal Society (煤炭学报)'
 paperurl: 'https://doi.org/10.13225/j.cnki.jccs.2019.1693'
 citation: 'Tao Ge, Meng Wang, Fen Li, Fanfei Min, Mingxu Zhang, (2021). &quot;Study and spectroscopy characterization of carbon and oxygen structures of Gaoyang coking coal.&quot; <i>Journal of China Coal Society 46 (3), 1024-1031</i>.'
 authors_short: 'Ge, T., <strong>Wang, M.</strong>, Li, F., Min, F., Zhang, M.'
+authors_full: 'Ge, T., <strong>Wang, M.</strong>, Li, F., Min, F., & Zhang, M.'
 
 ---
 This paper characterizes the carbon and oxygen structures of Gaoyang coking coal using proximate/ultimate analysis, 13C CP/MAS-NMR, FTIR, and XPS.

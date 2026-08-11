@@ -7,6 +7,7 @@ venue: 'IADC/SPE Asia Pacific Drilling Technology Conference (SPE-180597-MS)'
 paperurl: 'https://doi.org/10.2118/180597-MS'
 citation: 'Xiaojiang Li, Gensheng Li, Haizhu Wang, Peiqing Lu, Shouceng Tian, Ruiyue Yang, Meng Wang, (2016). &quot;A coupled model for predicting flowing temperature and pressure distribution in drilling ultra-short radius radial wells.&quot; <i>IADC/SPE Asia Pacific Drilling Technology Conference, SPE-180597-MS</i>. (Conference Proceedings)'
 authors_short: 'Li, X., Li, G., Wang, H., Lu, P., Tian, S., Yang, R., <strong>Wang, M.</strong>'
+authors_full: 'Li, X., Li, G., Wang, H., Lu, P., Tian, S., Yang, R., & <strong>Wang, M.</strong>'
 note: 'Conference Proceedings'
 
 ---

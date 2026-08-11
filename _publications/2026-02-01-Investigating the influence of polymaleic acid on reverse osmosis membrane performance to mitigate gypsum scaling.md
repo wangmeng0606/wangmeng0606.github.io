@@ -7,6 +7,7 @@ venue: 'Desalination'
 paperurl: 'https://doi.org/10.1016/j.desal.2025.119544'
 citation: 'Raynara M. S. Jacovone, Meng Wang, Jaqueline J. S. Soares, Solange K. Sakata, Debora F. Rodrigues, (2026). &quot;Investigating the influence of polymaleic acid on reverse osmosis membrane performance to mitigate gypsum scaling.&quot; <i>Desalination 619, 119544</i>.'
 authors_short: 'Jacovone, R.M.S., <strong>Wang, M.</strong>, Soares, J.J.S., Sakata, S.K., Rodrigues, D. F.'
+authors_full: 'Jacovone, R.M.S., <strong>Wang, M.</strong>, Soares, J.J.S., Sakata, S.K., & Rodrigues, D. F.'
 
 ---
 This paper investigates how polymaleic acid (PMA), applied either as a membrane coating or as a feed additive, affects reverse osmosis membrane scaling and cleaning performance.

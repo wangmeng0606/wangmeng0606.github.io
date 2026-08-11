@@ -30,7 +30,7 @@ excerpt: "Peer-reviewed publications by Meng Wang on membrane materials, mineral
       <ul class="publication-year-list">
         {% assign sorted_in_prep = in_prep_items | sort: "date" | reverse %}
         {% for publication in sorted_in_prep %}
-          <li class="publication-entry">
+          <li class="publication-entry" id="pub-{{ publication.title | slugify }}">
             {{ publication.authors_short }} {{ publication.title }}. <i>{% if publication.venue and publication.venue != "" %}{{ publication.venue }}{% else %}TBD{% endif %}</i>, {{ publication.date | date: "%Y" }} ({{ publication.status }}).
           </li>
         {% endfor %}
@@ -46,7 +46,7 @@ excerpt: "Peer-reviewed publications by Meng Wang on membrane materials, mineral
       <ul class="publication-year-list">
         {% assign year_items = group.items | sort: "date" | reverse %}
         {% for publication in year_items %}
-          <li class="publication-entry">
+          <li class="publication-entry" id="pub-{{ publication.title | slugify }}">
             {{ publication.authors_short }} {{ publication.title }}. <i>{{ publication.venue }}</i> {{ group.name }}{% if publication.note %} ({{ publication.note }}){% endif %}{% if publication.paperurl and publication.paperurl != "" %}, <a href="{{ publication.paperurl }}">{{ publication.paperurl }}</a>{% else %}, [DOI pending]{% endif %}
           </li>
         {% endfor %}

@@ -7,6 +7,7 @@ venue: 'Chemical Engineering Journal'
 paperurl: ''
 citation: 'M Wang, B Freeman, L Katz, Incorporating ion pairing into an extended Pitzer model for activity coefficients, Chemical Engineering Journal, 2026 (Ready for submission).'
 authors_short: '<strong>Wang, M.</strong>, Freeman, B., Katz, L.'
+authors_full: '<strong>Wang, M.</strong>, Freeman, B., & Katz, L.'
 status: 'Ready for submission'
 ---
 This manuscript is ready for submission. A full abstract will be added once available.

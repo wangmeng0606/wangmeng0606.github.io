@@ -7,6 +7,7 @@ venue: 'Atomization and Sprays'
 paperurl: 'https://doi.org/10.1615/AtomizSpr.2017017174'
 citation: 'Haizhu Wang, Gensheng Li, Zhenguo He, Zhonghou Shen, Meng Wang, Youwen Wang, (2017). &quot;Mechanism study on rock breaking with supercritical carbon dioxide jet.&quot; <i>Atomization and Sprays 27 (5), 383-394</i>.'
 authors_short: 'Wang, H., Li, G., He, Z., Shen, Z., <strong>Wang, M.</strong>, Wang, Y.'
+authors_full: 'Wang, H., Li, G., He, Z., Shen, Z., <strong>Wang, M.</strong>, & Wang, Y.'
 
 ---
 This paper uses SEM analysis of eroded rock surfaces to compare the rock-breaking mechanisms of supercritical CO2 jets versus water jets.

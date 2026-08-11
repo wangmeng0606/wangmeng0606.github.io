@@ -7,6 +7,7 @@ venue: 'Frontiers in Energy'
 paperurl: 'https://doi.org/10.1007/s11708-017-0458-6'
 citation: 'Haizhu Wang, Gensheng Li, Zhonghou Shen, Zhenguo He, Qingling Liu, Bin Zhu, Youwen Wang, Meng Wang, (2019). &quot;Expulsive force in the development of CO2 sequestration: application of SC-CO2 jet in oil and gas extraction.&quot; <i>Frontiers in Energy 13 (1), 1-8</i>.'
 authors_short: 'Wang, H., Li, G., Shen, Z., He, Z., Liu, Q., Zhu, B., Wang, Y., <strong>Wang, M.</strong>'
+authors_full: 'Wang, H., Li, G., Shen, Z., He, Z., Liu, Q., Zhu, B., Wang, Y., & <strong>Wang, M.</strong>'
 
 ---
 This paper reviews the use of supercritical CO2 (SC-CO2) jets in oil and gas extraction as a way to combine CO2 sequestration with economic benefit.

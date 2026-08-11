@@ -7,6 +7,7 @@ venue: 'Journal of Membrane Science'
 paperurl: 'https://doi.org/10.1016/j.memsci.2021.119308'
 citation: 'Ali Ansari, Janire Peña-Bahamonde, Meng Wang, Devin L. Shaffer, Yandi Hu, Debora F. Rodrigues, (2021). &quot;Polyacrylic acid-brushes tethered to graphene oxide membrane coating for scaling and biofouling mitigation on reverse osmosis membranes.&quot; <i>Journal of Membrane Science 630, 119308</i>.'
 authors_short: 'Ansari, A., Peña-Bahamonde, J., <strong>Wang, M.</strong>, Shaffer, D.L., Hu, Y., Rodrigues, D. F.'
+authors_full: 'Ansari, A., Peña-Bahamonde, J., <strong>Wang, M.</strong>, Shaffer, D.L., Hu, Y., & Rodrigues, D. F.'
 
 ---
 This paper is about Polyacrylic acid-brushes tethered to graphene oxide membrane coating for scaling and biofouling mitigation on reverse osmosis membranes

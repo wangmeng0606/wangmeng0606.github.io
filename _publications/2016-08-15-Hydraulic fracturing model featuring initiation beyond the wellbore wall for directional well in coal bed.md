@@ -7,6 +7,7 @@ venue: 'Journal of Geophysics and Engineering'
 paperurl: 'https://doi.org/10.1088/1742-2132/13/4/536'
 citation: 'Yuwei Li, Dan Jia, Meng Wang, Jia Liu, Chunkai Fu, Xinliang Yang, Chi Ai, (2016). &quot;Hydraulic fracturing model featuring initiation beyond the wellbore wall for directional well in coal bed.&quot; <i>Journal of Geophysics and Engineering 13 (4), 536-548</i>.'
 authors_short: 'Li, Y., Jia, D., <strong>Wang, M.</strong>, Liu, J., Fu, C., Yang, X., Ai, C.'
+authors_full: 'Li, Y., Jia, D., <strong>Wang, M.</strong>, Liu, J., Fu, C., Yang, X., & Ai, C.'
 
 ---
 This paper proposes a hydraulic fracturing initiation model for directional wells in coal beds where fracture initiation occurs beyond the wellbore wall.

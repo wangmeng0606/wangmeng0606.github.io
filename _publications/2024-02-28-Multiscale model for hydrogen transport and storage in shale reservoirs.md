@@ -7,6 +7,7 @@ venue: 'SPE Journal'
 paperurl: 'https://doi.org/10.2118/219472-PA'
 citation: 'Yanwei Wang, Qian Sun, Fangxuan Chen, Meng Wang, (2024). &quot;Multiscale model for hydrogen transport and storage in shale reservoirs.&quot; <i>SPE Journal 29 (6), 3238-3264</i>.'
 authors_short: 'Wang, Y., Sun, Q., Chen, F., <strong>Wang, M.</strong>'
+authors_full: 'Wang, Y., Sun, Q., Chen, F., & <strong>Wang, M.</strong>'
 
 ---
 This paper develops a multiscale semi-analytical model for hydrogen transport and storage in partially depleted, hydraulically fractured shale reservoirs.
