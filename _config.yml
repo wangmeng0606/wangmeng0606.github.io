@@ -108,7 +108,7 @@ author:
   lastfm           :
   linkedin         : "meng-wang-872491171"
   orcid            : "https://orcid.org/0000-0002-1454-4020"
-  cv_pdf           : # Example: "/files/Meng-Wang-CV.pdf"
+  cv_pdf           : /files/Meng-Wang-CV.pdf
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
