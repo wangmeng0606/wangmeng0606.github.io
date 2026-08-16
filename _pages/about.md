@@ -3,6 +3,7 @@ layout: home
 permalink: /
 title: "Home"
 excerpt: "Meng Wang is an environmental engineer studying ion transport, membrane materials, mineral scaling, and water treatment."
+description: "Meng Wang is an environmental engineering researcher at The University of Texas at Austin studying ion transport, molecular interactions, and membrane separation in aqueous systems."
 redirect_from:
   - /about/
   - /about.html
@@ -17,7 +18,7 @@ redirect_from:
     <p>Meng Wang is a Postdoctoral Researcher in the Department of Civil, Architectural
   and Environmental Engineering at The University of Texas at Austin, working with
   <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>.
-  His research advances a molecular-level understanding of ion transport and separation in aqueous solutions and at interfaces, combining spectroscopy and thermodynamic modeling to address key challenges in membrane technology and the broader water-energy nexus.</p>
+  His research advances a molecular-level understanding of ion transport and separation in aqueous solutions and at interfaces, combining spectroscopy and thermodynamic modeling to address key challenges in membrane separation and the broader water-energy nexus.</p>
     <p>He received his Ph.D. in Environmental Engineering from the University of Houston
   in 2023, working with
   <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Prof. Debora F. Rodrigues</a>.</p>
