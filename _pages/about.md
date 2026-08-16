@@ -2,8 +2,8 @@
 layout: home
 permalink: /
 title: "Home"
-excerpt: "Meng Wang is an environmental engineer studying ion transport, membrane materials, mineral scaling, and water treatment."
-description: "Meng Wang is an environmental engineering researcher at The University of Texas at Austin studying ion transport, molecular interactions, and membrane separation in aqueous systems."
+excerpt: "Meng Wang is a postdoctoral researcher at UT studying ion transport, membrane materials, mineral scaling, and water treatment."
+description: "Meng Wang is a postdoctoral researcher at The University of Texas at Austin studying ion transport, molecular interactions, and membrane separation in aqueous systems."
 redirect_from:
   - /about/
   - /about.html
@@ -12,7 +12,7 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-heading">
   <div class="home-hero__content">
     <p class="eyebrow">Solution/Interfacial Chemistry · Materials and Modeling · Water &amp; Energy</p>
-    <h1 id="home-heading">Understanding molecule fate and transport across scales</h1>
+    <h1 id="home-heading">Understanding molecule interactions and transport </h1>
     <p class="home-hero__subheading">Designing next-generation separation and energy systems</p>
     <div class="home-hero__lead">
     <p>Meng Wang is a Postdoctoral Researcher in the Department of Civil, Architectural
