@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="phTitle phDesc">
+  <title id="phTitle">Placeholder diagram: research flow for Molecular Thermodynamics &amp; Ion Transport</title>
+  <desc id="phDesc">Conceptual placeholder only. Not experimental data. Shows four labeled stages connected left to right: ion association and hydration, molecular speciation, thermodynamic modeling, ion transport.</desc>
+
+  <!-- canvas -->
+  <rect x="0.5" y="0.5" width="799" height="449" rx="16" fill="#f8f5f0" stroke="#e6e0d6"/>
+
+  <!-- faint diagonal watermark so this cannot be mistaken for a real figure -->
+  <text x="400" y="260" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700"
+        fill="#201d1b" fill-opacity="0.06" text-anchor="middle"
+        transform="rotate(-18 400 260)">PLACEHOLDER</text>
+
+  <!-- eyebrow -->
+  <text x="40" y="46" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700"
+        letter-spacing="1.5" fill="#6f2436">RESEARCH FLOW — CONCEPTUAL ONLY</text>
+
+  <!-- stage 1 -->
+  <rect x="30" y="175" width="160" height="100" rx="10" fill="#ffffff" stroke="#e6e0d6"/>
+  <text x="110" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">Ion association</text>
+  <text x="110" y="235" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">&amp; hydration</text>
+
+  <!-- arrow 1 -->
+  <line x1="192" y1="225" x2="226" y2="225" stroke="#6f2436" stroke-width="2"/>
+  <polygon points="226,219 236,225 226,231" fill="#6f2436"/>
+
+  <!-- stage 2 -->
+  <rect x="238" y="175" width="160" height="100" rx="10" fill="#ffffff" stroke="#e6e0d6"/>
+  <text x="318" y="225" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">Molecular</text>
+  <text x="318" y="245" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">speciation</text>
+
+  <!-- arrow 2 -->
+  <line x1="400" y1="225" x2="434" y2="225" stroke="#6f2436" stroke-width="2"/>
+  <polygon points="434,219 444,225 434,231" fill="#6f2436"/>
+
+  <!-- stage 3 -->
+  <rect x="446" y="175" width="160" height="100" rx="10" fill="#ffffff" stroke="#e6e0d6"/>
+  <text x="526" y="215" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">Thermodynamic</text>
+  <text x="526" y="235" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">modeling</text>
+
+  <!-- arrow 3 -->
+  <line x1="608" y1="225" x2="642" y2="225" stroke="#6f2436" stroke-width="2"/>
+  <polygon points="642,219 652,225 642,231" fill="#6f2436"/>
+
+  <!-- stage 4 -->
+  <rect x="654" y="175" width="118" height="100" rx="10" fill="#ffffff" stroke="#e6e0d6"/>
+  <text x="713" y="225" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">Ion</text>
+  <text x="713" y="245" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#201d1b" text-anchor="middle">transport</text>
+
+  <!-- explicit, fully legible caption -->
+  <text x="400" y="410" font-family="Arial, Helvetica, sans-serif" font-size="13" font-style="italic"
+        fill="#6a655f" text-anchor="middle">Conceptual placeholder — no experimental data, spectra, or molecular structures shown. Replace with final research figure.</text>
+</svg>

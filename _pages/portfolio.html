@@ -8,62 +8,96 @@ excerpt: "Research on ion transport, interfacial chemistry, mineral scaling, and
 
 <div class="page-intro">
   <p class="eyebrow">Research</p>
-  <p class="page-intro__lead">I investigate how water, ions, polymers, and mineral surfaces interact, and use thermodynamic and computational modeling to translate that understanding into better materials and predictive tools for water and energy systems.</p>
+  <p class="page-intro__lead">My research investigates how molecular interactions in aqueous and interfacial systems govern speciation, transport, and separation performance. I combine spectroscopy, thermodynamic modeling, and multiscale experiments to connect molecular-scale behavior with membrane separations, resource recovery, and scaling/fouling control at the water–energy nexus.</p>
 </div>
 
-{% assign thrust_names = "Origins of Solution Chemistry|Interfacial Chemistry|Computational Modeling" | split: "|" %}
-<nav class="research-jumpnav" aria-label="Jump to a research thrust">
-  {% for thrust_name in thrust_names %}
-    <a href="#{{ thrust_name | slugify }}">{{ thrust_name }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
+{% assign programs = site.portfolio | where_exp: "p", "p.program == true" | sort: "program_order" %}
+
+<nav class="research-jumpnav" aria-label="Jump to a research program">
+  {% for program in programs %}
+    <a href="#{{ program.title | slugify }}">{{ program.title }}</a>{% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
   {% endfor %}
 </nav>
 
-{% for thrust_name in thrust_names %}
-  {% assign thrust_projects = site.portfolio | where: "thrust", thrust_name | sort: "order" %}
-  <section class="research-thrust" id="{{ thrust_name | slugify }}">
-    <h2 class="research-thrust__title">{{ thrust_name }}</h2>
-    <div class="research-thrust__projects{% if thrust_projects.size > 1 %} research-thrust__projects--grid{% endif %}">
-      {% for project in thrust_projects %}
-        <article class="research-project" id="{{ project.title | slugify }}">
-          <div class="research-project__media{% unless project.header.teaser %} research-project__media--no-image{% endunless %}">
-            {% if project.header.teaser %}
-              <div class="research-project__image">
-                <img src="{{ site.baseurl }}/images/{{ project.header.teaser }}" alt="{{ project.title }}">
-              </div>
-            {% endif %}
-            <div class="research-project__content">
-              <h3 class="research-project__title">{{ project.title }}</h3>
-              <div class="research-project__body">
-                {{ project.content }}
-              </div>
+{% for program in programs %}
+  <section class="research-program research-program--{{ program.size }}" id="{{ program.title | slugify }}">
+    {% assign figure_count = 0 %}
+    {% if program.figures %}{% assign figure_count = program.figures.size %}{% endif %}
+    {% if figure_count == 0 and program.header.teaser %}{% assign figure_count = 1 %}{% endif %}
 
-              {% assign related_permalinks = project.related_publications %}
-              {% if related_permalinks and related_permalinks.size > 0 %}
-                {% assign related_pubs = site.publications | where_exp: "p", "related_permalinks contains p.url" %}
-                {% assign related_pubs_sorted = related_pubs | sort: "date" | reverse %}
-                <div class="research-project__pubs">
-                  <h4>Relevant Publications</h4>
-                  <ul>
-                    {% for pub in related_pubs_sorted %}
-                      {% assign pub_slug = pub.title | slugify %}
-                      {% assign pub_has_doi = false %}
-                      {% if pub.paperurl and pub.paperurl != "" %}{% assign pub_has_doi = true %}{% endif %}
-                      {% assign pub_link = pub.paperurl %}
-                      {% unless pub_has_doi %}{% assign pub_link = "/publications/#pub-" | append: pub_slug %}{% endunless %}
-                      <li>
-                        {{ pub.authors_full }} ({{ pub.date | date: "%Y" }}). {{ pub.title }}. <i>{% if pub.venue and pub.venue != "" %}{{ pub.venue }}{% else %}TBD{% endif %}</i>{% if pub.note %} ({{ pub.note }}){% endif %}{% if pub.status %} ({{ pub.status }}){% endif %}.
-                        <a href="{{ pub_link }}">{% if pub_has_doi %}{{ pub.paperurl }}{% else %}[DOI pending]{% endif %}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                </div>
-              {% else %}
-                <p class="research-project__pubs-empty">Manuscript in preparation.</p>
-              {% endif %}
-            </div>
+    {% if figure_count > 0 %}
+      <div class="research-carousel{% if figure_count > 1 %} research-carousel--nav{% endif %}"{% if figure_count > 1 %} data-carousel{% endif %}>
+        <div class="research-carousel__track">
+          {% if program.figures and program.figures.size > 0 %}
+            {% for figure in program.figures %}
+              <figure class="research-carousel__slide{% if forloop.first %} is-active{% endif %}">
+                <img src="{{ site.baseurl }}/images/{{ figure.image }}" alt="{{ figure.alt }}">
+              </figure>
+            {% endfor %}
+          {% elsif program.header.teaser %}
+            <figure class="research-carousel__slide is-active{% if program.header.placeholder %} research-carousel__slide--placeholder{% endif %}">
+              <img src="{{ site.baseurl }}/images/{{ program.header.teaser }}" alt="{{ program.title }}">
+              {% if program.header.placeholder %}<figcaption>Placeholder — to be replaced with a final figure</figcaption>{% endif %}
+            </figure>
+          {% endif %}
+        </div>
+        {% if figure_count > 1 %}
+          <div class="research-carousel__dots" role="tablist" aria-label="{{ program.title }} figures">
+            {% for figure in program.figures %}
+              <button type="button" class="research-carousel__dot{% if forloop.first %} is-active{% endif %}" data-slide-index="{{ forloop.index0 }}" aria-label="Show figure {{ forloop.index }} of {{ program.figures.size }}"{% if forloop.first %} aria-current="true"{% endif %}></button>
+            {% endfor %}
           </div>
-        </article>
-      {% endfor %}
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="research-program__header">
+      <span class="research-program__label">{{ program.program_status }}</span>
+      <h2 class="research-program__title">{{ program.title }}</h2>
+    </div>
+
+    <div class="research-program__body">
+      <div class="research-program__content">
+        <p class="research-program__question"><strong>Research question:</strong> {{ program.research_question }}</p>
+        <div class="research-program__contribution">{{ program.content }}</div>
+
+        {% if program.key_findings and program.key_findings.size > 0 %}
+          <div class="research-program__findings">
+            <h3>Key findings</h3>
+            <ul>
+              {% for finding in program.key_findings %}
+                <li>{{ finding }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% elsif program.findings_note %}
+          <p class="research-program__findings-note">{{ program.findings_note }}</p>
+        {% endif %}
+
+        {% assign related_permalinks = program.related_publications %}
+        {% assign related_pubs = site.publications | where_exp: "p", "related_permalinks contains p.url" %}
+        {% assign related_pubs_sorted = related_pubs | sort: "date" | reverse %}
+        <div class="research-program__pubs">
+          <h4>Related publications</h4>
+          <ul>
+            {% for pub in related_pubs_sorted %}
+              {% assign pub_slug = pub.title | slugify %}
+              {% assign pub_has_doi = false %}
+              {% if pub.paperurl and pub.paperurl != "" %}{% assign pub_has_doi = true %}{% endif %}
+              {% assign pub_link = pub.paperurl %}
+              {% unless pub_has_doi %}{% assign pub_link = "/publications/#pub-" | append: pub_slug %}{% endunless %}
+              <li>
+                {{ pub.authors_full }} ({{ pub.date | date: "%Y" }}). {{ pub.title }}. <i>{% if pub.venue and pub.venue != "" %}{{ pub.venue }}{% else %}TBD{% endif %}</i>{% if pub.note %} ({{ pub.note }}){% endif %}{% if pub.status %} ({{ pub.status }}){% endif %}.
+                <a href="{{ pub_link }}">{% if pub_has_doi %}{{ pub.paperurl }}{% else %}[DOI pending]{% endif %}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 {% endfor %}
+
+<p class="research-archive-note">Full project write-ups and the complete list of publications for each program remain available in the <a href="{{ site.baseurl }}/publications/">full publications list</a>.</p>
+
+<script src="{{ site.baseurl }}/assets/js/research-carousel.js"></script>
