@@ -5,12 +5,26 @@ program: true
 program_order: 3
 program_status: "Previous research"
 size: "compact"
-research_question: "How do fluids move through fractures, pore networks, and wellbores under complex, non-ideal conditions — and how can predictive models capture that?"
+research_question: "How do supercritical carbon dioxide (CO₂) fluids move through fractures, pore networks, and wellbores under complex reservior conditions, and how can predictive models capture that?"
 key_findings:
-  - "Multiscale reservoir modeling estimated hydrogen storage capacity of roughly 3.2 billion m³ in a representative Appalachian Basin case."
-related_publications:
-  - /publication/2024-02-28-Multiscale model for hydrogen transport and storage in shale reservoirs
-  - /publication/2017-02-01-A unified model for wellbore flow and heat transfer in pure CO2 injection for geological sequestration, EOR, and fracturing operations
+  - "Annular fluid properties and CO₂ heat-source/sink effects strongly controlled wellbore pressure and temperature, enabling prediction of bottomhole conditions during CO₂ injection."
+  - "Fracture geometry and flow conditions strongly controlled supercritical CO₂ and proppant transport, revealing strategies to improve proppant placement and fracture connectivity."
 
+figures:
+  
+  - image: "CO2_injection.jpg"
+    alt: "Schematic of CO2 injection"
+  - image: "Proppant transport.jpg"
+    alt: "proppant transport in T-shape"
+  - image: "X_shape.jpg"
+    alt: "proppan transport in X-shape"
+  # - image: "GO.jpg"
+  #   alt: "PAA functionlaized GO membrane combat mineral scaling and biofouling "
+
+related_publications:
+  - /publication/2018-07-10-Numerical study of supercritical CO2 and proppant transport in different geometrical fractures
+  - /publication/2018-11-01-Numerical study of proppant transport with supercritical CO2 in fracture
+  - /publication/2017-02-01-A unified model for wellbore flow and heat transfer in pure CO2 injection for geological sequestration, EOR, and fracturing operations
+  
 ---
-Earlier in my research career, I used computational fluid dynamics and multiscale semi-analytical modeling to characterize wellbore flow and heat transfer during CO2-based drilling and injection, and to study proppant transport, hydrogen storage, and CO2-enhanced recovery in fractured and shale reservoirs.
+ Efficient CO₂-based reservoir stimulation requires understanding how multiphase flow, heat transfer, and particle transport evolve across complex fracture networks—challenges that are critical for improving resource recovery while reducing water use. Earlier in my research career, I used computational fluid dynamics and multiscale semi-analytical modeling to characterize wellbore flow and heat transfer during CO₂-based injection, and fracturing, and to study proppant transport, and CO2-enhanced recovery in fractured and shale reservoirs.
