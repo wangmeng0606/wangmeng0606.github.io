@@ -8,6 +8,7 @@ paperurl: 'https://doi.org/10.1021/acsami.5c07057'
 citation: 'Meng Wang, Murchana Sarma, Samuel J. Lounder, Abhishek N. Mondal, Lavanya Muthusamy, Goutam Koley, Ayse Asatekin, Debora F. Rodrigues, (2025). &quot;Organic fouling on zwitterionic amphiphilic copolymers: implications in biofouling.&quot; <i>ACS Applied Materials & Interfaces 17 (20), 30149-30160</i>.'
 authors_short: '<strong>Wang, M.</strong>, Sarma, M., Lounder, S.J., Mondal, A.N., Muthusamy, L., Koley, G., Asatekin, A., Rodrigues, D. F.'
 authors_full: '<strong>Wang, M.</strong>, Sarma, M., Lounder, S.J., Mondal, A.N., Muthusamy, L., Koley, G., Asatekin, A., & Rodrigues, D. F.'
+featured: true
 
 ---
 This paper examines how organic-molecule conditioning of zwitterionic amphiphilic copolymer coatings influences subsequent bacterial attachment and biofilm formation.

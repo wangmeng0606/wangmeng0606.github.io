@@ -10,14 +10,14 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
+------
 * B.S. in Petroleum Engineering, Northeastern Petroleum University, 2015
 * M.S. in Petroleum Engineering, China University of Petroleum, 2018
 * M.S. in Computer Science,      Georgia Institute of Technology, 2026
 * Ph.D. in Environmental Engineering, University of Houston, 2023
 
 Research experience
-======
+------
 * Fall 2023 - Present: Research Associate
   * The University of Texas at Austin
   * Duties included: 
@@ -50,7 +50,7 @@ Research experience
   * Supervisor: Professor Yuwei Li
 
 Awards
-======
+------
 * 2021	    Graduate Student Travel Award, ACS Southwest Regional Meeting
 * 2018–2023	Graduate Tuition Fellowship, University of Houston
 * 2017	 Robert Rocca Scholarship from Tenaris China

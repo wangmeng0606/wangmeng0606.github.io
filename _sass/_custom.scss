@@ -2,24 +2,19 @@
    Meng Wang — custom visual system
    ========================================================================== */
 
-$navy: #12333d;
-$teal: #0f6b72;
-$teal-dark: #0b505b;
-$mint: #dcebe7;
-$paper: #f7faf9;
-$white: #ffffff;
-$copper: #c86f47;
-$ink-muted: #5c6d70;
+// Color palette ($paper, $paper-deep, $white, $ink, $ink-muted, $border,
+// $accent, $accent-dark, $accent-soft) is defined once in _sass/_variables.scss.
 
 body {
   background: $paper;
   letter-spacing: -0.005em;
+  padding-bottom: 3.5em;
 }
 
 h1,
 h2,
 h3 {
-  color: $navy;
+  color: $ink;
   letter-spacing: -0.025em;
 }
 
@@ -29,17 +24,17 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba($copper, 0.45);
+  outline: 3px solid rgba($accent, 0.45);
   outline-offset: 4px;
 }
 
 .masthead {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid rgba($navy, 0.1);
+  border-bottom: 1px solid rgba($ink, 0.1);
   background: rgba($paper, 0.94);
   backdrop-filter: blur(14px);
-  box-shadow: 0 8px 30px rgba($navy, 0.035);
+  box-shadow: 0 8px 30px rgba($ink, 0.035);
 
   &__inner-wrap {
     max-width: 1180px;
@@ -52,26 +47,46 @@ button:focus-visible {
   background: transparent;
 
   a {
-    color: $navy;
+    color: $ink;
     font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 0.025em;
   }
 
   .visible-links li:first-child a {
-    font-family: $serif;
+    font-family: $sans-serif;
     font-size: 1.15rem;
+    font-weight: 700;
     letter-spacing: -0.02em;
   }
 
   .visible-links a:before {
     height: 2px;
-    background: $copper;
+    background: $accent;
   }
 
   button {
     border-radius: 8px;
-    background: $teal;
+    background: $accent;
+  }
+
+  .hidden-links {
+    border-color: rgba($ink, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba($ink, 0.1);
+
+    &:before {
+      border-color: rgba($ink, 0.1) transparent;
+    }
+
+    a {
+      font-weight: 600;
+
+      &:hover {
+        color: $accent-dark;
+        background: rgba($accent, 0.1);
+      }
+    }
   }
 }
 
@@ -101,7 +116,7 @@ button:focus-visible {
   }
 
   a {
-    text-decoration-color: rgba($teal, 0.35);
+    text-decoration-color: rgba($accent, 0.35);
     text-underline-offset: 0.16em;
   }
 }
@@ -114,13 +129,14 @@ button:focus-visible {
     border: 5px solid $white;
     object-fit: cover;
     object-position: 50% 43%;
-    box-shadow: 0 12px 30px rgba($navy, 0.12);
+    box-shadow: 0 12px 30px rgba($ink, 0.12);
   }
 
   .author__name {
-    color: $navy;
-    font-family: $serif;
+    color: $ink;
+    font-family: $sans-serif;
     font-size: 1.12rem;
+    font-weight: 700;
   }
 
   .author__bio {
@@ -131,7 +147,7 @@ button:focus-visible {
     border-radius: 6px;
 
     &:hover {
-      color: $teal;
+      color: $accent;
       text-decoration: none;
     }
   }
@@ -139,7 +155,7 @@ button:focus-visible {
 
 .eyebrow {
   margin: 0 0 0.8rem;
-  color: $teal;
+  color: $accent;
   font-family: $sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -168,21 +184,21 @@ button:focus-visible {
 
 .button--primary {
   color: $white !important;
-  background: $teal;
-  box-shadow: 0 10px 24px rgba($teal, 0.22);
+  background: $accent;
+  box-shadow: 0 8px 20px rgba($accent, 0.16);
 
   &:hover {
-    background: $teal-dark;
+    background: $accent-dark;
   }
 }
 
 .button--secondary {
-  color: $navy !important;
-  border-color: rgba($navy, 0.2);
+  color: $ink !important;
+  border-color: rgba($ink, 0.2);
   background: rgba($white, 0.72);
 
   &:hover {
-    border-color: $teal;
+    border-color: $accent;
     background: $white;
   }
 }
@@ -194,7 +210,7 @@ button:focus-visible {
 
 .text-link,
 .publication-link {
-  color: $teal;
+  color: $accent;
   font-family: $sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
@@ -227,29 +243,13 @@ button:focus-visible {
 .home-hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+  grid-template-columns: minmax(0, 1fr) 330px;
   gap: 3.5rem;
   align-items: center;
-  min-height: 610px;
-  padding: 3.7rem;
-  overflow: hidden;
-  border: 1px solid rgba($navy, 0.08);
-  border-radius: 32px;
-  background:
-    radial-gradient(circle at 88% 12%, rgba($copper, 0.13) 0, rgba($copper, 0.13) 8%, transparent 8.3%),
-    radial-gradient(circle at 82% 18%, rgba($teal, 0.12) 0, rgba($teal, 0.12) 18%, transparent 18.3%),
-    linear-gradient(135deg, #edf5f2 0%, #f7faf9 62%, #e1eeea 100%);
-
-  &:after {
-    position: absolute;
-    right: -90px;
-    bottom: -110px;
-    width: 330px;
-    height: 330px;
-    border: 1px solid rgba($teal, 0.14);
-    border-radius: 50%;
-    content: "";
-  }
+  padding: 3rem;
+  border: 1px solid rgba($ink, 0.08);
+  border-radius: 18px;
+  background: $white;
 }
 
 .home-hero__content,
@@ -261,19 +261,24 @@ button:focus-visible {
 .home-hero h1 {
   max-width: 760px;
   margin: 0;
-  font-size: 2.25rem;
-  line-height: 0.98;
+  font-size: 2.7rem;
+  line-height: 1.05;
+}
 
-  span {
-    color: $teal;
-  }
+.home-hero__subheading {
+  max-width: 700px;
+  margin: 0.6rem 0 0;
+  color: $ink-muted;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.3;
 }
 
 .home-hero__lead {
   max-width: 670px;
   margin: 1.45rem 0 1.65rem;
-  color: #42575b;
-  font-size: 0.1 rem;
+  color: $ink-muted;
+  font-size: 1.05rem;
   line-height: 1.7;
 }
 
@@ -281,6 +286,25 @@ button:focus-visible {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
+}
+
+.home-hero__profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1.3rem;
+  margin-top: 1rem;
+
+  a {
+    color: $ink-muted;
+    font-family: $sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      color: $accent;
+    }
+  }
 }
 
 .home-hero__affiliation {
@@ -296,25 +320,23 @@ button:focus-visible {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: $copper;
-    box-shadow: 0 0 0 5px rgba($copper, 0.12);
+    background: $accent;
+    box-shadow: 0 0 0 5px rgba($accent, 0.12);
   }
 }
 
 .home-hero__portrait {
-  justify-self: end;
   width: 100%;
   max-width: 330px;
 }
 
 .portrait-frame {
   position: relative;
-  height: 410px;
+  height: 380px;
   overflow: hidden;
-  border: 8px solid rgba($white, 0.85);
-  border-radius: 46% 46% 24px 24px;
-  background: $mint;
-  box-shadow: 0 30px 65px rgba($navy, 0.18);
+  border: 1px solid rgba($ink, 0.08);
+  border-radius: 16px;
+  background: $paper-deep;
 
   img {
     width: 100%;
@@ -325,22 +347,14 @@ button:focus-visible {
 }
 
 .portrait-note {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-direction: column;
-  width: 82%;
-  margin: 0.9rem auto 0;
-  padding: 0.9rem 1.1rem;
-  border: 1px solid rgba($navy, 0.08);
-  border-radius: 14px;
-  background: rgba($white, 0.94);
-  box-shadow: 0 14px 35px rgba($navy, 0.12);
+  margin: 0.9rem 0 0;
   text-align: center;
 
   strong {
-    color: $navy;
-    font-family: $serif;
+    color: $ink;
+    font-family: $sans-serif;
     font-size: 0.95rem;
   }
 
@@ -377,6 +391,14 @@ button:focus-visible {
   line-height: 1.12;
 }
 
+.section-heading__lead {
+  max-width: 640px;
+  margin: 0.9rem 0 0;
+  color: $ink-muted;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
 .section-heading--wide {
   margin-bottom: 2rem;
 }
@@ -390,7 +412,7 @@ button:focus-visible {
 }
 
 .intro-copy {
-  color: #44595d;
+  color: $ink-muted;
   font-size: 0.95rem;
   line-height: 1.8;
 
@@ -409,12 +431,13 @@ button:focus-visible {
   min-height: 250px;
   padding: 1.7rem;
   border: 1px solid $border-color;
+  border-top: 3px solid $accent;
   border-radius: 18px;
   background: $white;
-  box-shadow: 0 14px 35px rgba($navy, 0.045);
+  box-shadow: 0 14px 35px rgba($ink, 0.045);
 
   h3 {
-    margin: 2.8rem 0 0.7rem;
+    margin: 1.4rem 0 0.6rem;
     font-size: 1.3rem;
   }
 
@@ -426,21 +449,8 @@ button:focus-visible {
   }
 }
 
-.focus-card--accent {
-  color: $white;
-  border-color: $teal;
-  background: $teal;
-  transform: translateY(-10px);
-
-  h3,
-  p,
-  .focus-card__number {
-    color: $white;
-  }
-}
-
 .focus-card__number {
-  color: $copper;
+  color: $accent;
   font-family: $sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
@@ -466,11 +476,11 @@ button:focus-visible {
   }
 
   h3 a {
-    color: $navy;
+    color: $ink;
     text-decoration: none;
 
     &:hover {
-      color: $teal;
+      color: $accent;
     }
   }
 }
@@ -494,11 +504,11 @@ button:focus-visible {
   }
 
   h3 a {
-    color: $navy;
+    color: $ink;
     text-decoration: none;
 
     &:hover {
-      color: $teal;
+      color: $accent;
     }
   }
 
@@ -512,7 +522,7 @@ button:focus-visible {
 
 .featured-news-item__meta {
   padding-top: 0.2rem;
-  color: $copper;
+  color: $accent;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -527,7 +537,7 @@ button:focus-visible {
   font-size: 0.68rem;
 
   span:first-child {
-    color: $copper;
+    color: $accent;
     font-size: 0.72rem;
     font-weight: 700;
   }
@@ -541,10 +551,10 @@ button:focus-visible {
   margin: 4rem 0 2rem;
   padding: 3rem;
   border-radius: 24px;
-  background: $navy;
+  background: $ink;
 
   .eyebrow {
-    color: #8fd2cb;
+    color: $accent-soft;
   }
 
   h2 {
@@ -570,7 +580,7 @@ button:focus-visible {
     text-decoration: none;
 
     &:hover {
-      color: #9ddbd5;
+      color: $accent-soft;
     }
   }
 }
@@ -580,9 +590,9 @@ button:focus-visible {
 .page-intro {
   margin-bottom: 2rem;
   padding: 1.7rem 1.8rem;
-  border-left: 4px solid $copper;
+  border-left: 4px solid $accent;
   border-radius: 0 16px 16px 0;
-  background: $mint;
+  background: $paper-deep;
 
   .eyebrow {
     margin-bottom: 0.5rem;
@@ -592,10 +602,11 @@ button:focus-visible {
 .page-intro__lead {
   max-width: 780px;
   margin: 0;
-  color: $navy;
-  font-family: $serif;
-  font-size: 1.25rem;
-  line-height: 1.55;
+  color: $ink;
+  font-family: $sans-serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 .page-intro--publications .button {
@@ -610,7 +621,7 @@ button:focus-visible {
   font-size: 0.78rem;
 
   a {
-    color: $teal;
+    color: $accent;
     font-weight: 600;
     text-decoration: none;
 
@@ -632,8 +643,8 @@ button:focus-visible {
 
 .research-thrust__title {
   margin: 0 0 1.6rem;
-  color: $navy;
-  font-family: $serif;
+  color: $ink;
+  font-family: $sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
 }
@@ -685,7 +696,7 @@ button:focus-visible {
 
 .research-project__title {
   margin: 0 0 0.9rem;
-  color: $navy;
+  color: $ink;
   font-size: 1.25rem;
   line-height: 1.3;
 }
@@ -708,7 +719,7 @@ button:focus-visible {
 
   h4 {
     margin: 0 0 0.6rem;
-    color: $navy;
+    color: $ink;
     font-size: 0.74rem;
     font-weight: 700;
     letter-spacing: 0.04em;
@@ -730,7 +741,7 @@ button:focus-visible {
   }
 
   a {
-    color: $teal;
+    color: $accent;
     font-size: inherit;
     line-height: inherit;
     text-decoration: none;
@@ -771,14 +782,14 @@ button:focus-visible {
 
 .publication-year-heading {
   margin: 0 0 0.9rem;
-  color: $teal;
-  font-family: $serif;
+  color: $accent;
+  font-family: $sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
 }
 
 .publication-year-group--in-prep .publication-year-heading {
-  color: $copper;
+  color: $ink-muted;
 }
 
 .publication-year-list {
@@ -791,12 +802,12 @@ button:focus-visible {
 }
 
 .publication-entry {
-  color: $navy;
+  color: $ink;
   font-size: 0.92rem;
   line-height: 1.65;
 
   a {
-    color: $teal;
+    color: $accent;
     text-decoration: none;
     word-break: break-word;
 
@@ -817,22 +828,30 @@ button:focus-visible {
 }
 
 .archive__item-title a {
-  color: $navy;
+  color: $ink;
   text-decoration: none;
 }
 
 .page__footer {
-  color: #b9cdca;
-  border-top: 0;
-  background: $navy;
+  color: $ink-muted;
+  border-top: 1px solid $border;
+  background: $paper;
 
   footer {
     max-width: 1180px;
+    margin-top: 0;
+    padding: 1rem 1em;
   }
 
   a {
-    color: $white;
+    color: $accent;
   }
+}
+
+.page__footer-copyright {
+  font-family: $sans-serif;
+  font-size: 0.68rem;
+  color: $ink-muted;
 }
 
 @media (max-width: 900px) {
@@ -843,7 +862,11 @@ button:focus-visible {
   }
 
   .home-hero h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
+  }
+
+  .home-hero__subheading {
+    font-size: 1.25rem;
   }
 
   .home-hero__portrait {
@@ -878,13 +901,15 @@ button:focus-visible {
   }
 
   .home-hero {
-    min-height: 0;
     padding: 2rem 1.3rem;
-    border-radius: 20px;
   }
 
   .home-hero h1 {
-    font-size: 2.35rem;
+    font-size: 2.05rem;
+  }
+
+  .home-hero__subheading {
+    font-size: 1.05rem;
   }
 
   .home-hero__lead {
@@ -911,10 +936,6 @@ button:focus-visible {
 
   .focus-card {
     min-height: 0;
-  }
-
-  .focus-card--accent {
-    transform: none;
   }
 
   .section-heading h2,
