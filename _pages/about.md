@@ -15,11 +15,11 @@ redirect_from:
     <h1 id="home-heading">Understanding molecule interactions and transport </h1>
     <p class="home-hero__subheading">Designing next-generation separation and energy systems</p>
     <div class="home-hero__lead">
-    <p>Meng Wang is a Postdoctoral Researcher in the Department of Civil, Architectural
-  and Environmental Engineering at The University of Texas at Austin, working with
+    <p>Meng Wang is a Postdoctoral Researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural
+  and Environmental Engineering</a> at The University of Texas at Austin, working with
   <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>.
   His research advances a molecular-level understanding of ion transport and separation in aqueous solutions and at interfaces, combining spectroscopy and thermodynamic modeling to address key challenges in membrane separation and the broader water-energy nexus.</p>
-    <p>He received his Ph.D. in Environmental Engineering from the University of Houston
+    <p>He received his Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
   in 2023, working with
   <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Prof. Debora F. Rodrigues</a>.</p>
   </div>
@@ -133,7 +133,7 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-contact" aria-labelledby="connect-heading">
+<!-- <section class="home-contact" aria-labelledby="connect-heading">
   <div>
     <p class="eyebrow">Connect</p>
     <h2 id="connect-heading">Interested in collaboration or research opportunities?</h2>
@@ -143,4 +143,4 @@ redirect_from:
     <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
     <a href="{{ site.author.orcid }}">ORCID <span aria-hidden="true">↗</span></a>
   </div>
-</section>
+</section> -->
