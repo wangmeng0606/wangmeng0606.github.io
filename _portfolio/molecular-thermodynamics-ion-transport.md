@@ -6,7 +6,7 @@ program_order: 1
 program_status: "Current research"
 size: "large"
 
-research_question: "How can we accurately determine ion pairing and ion–solvent hydration in aqueous/co-solvent systems, and how can this molecular-scale behavior be captured in a predictive thermodynamic model?"
+research_question: "How can we accurately determine ion pairing and ion–solvent interactions in aqueous/co-solvent systems, and how can this molecular-scale behavior be captured in a predictive thermodynamic model?"
 
 key_findings:
   - "Combined Raman and dielectric spectroscopy revealed ion-specific ion-pairing behavior in sulfate electrolytes and showed that methanol enhances solvent-shared ion pair (SIP) and contact ion pair (CIP) formation."
