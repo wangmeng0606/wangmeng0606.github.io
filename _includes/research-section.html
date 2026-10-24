@@ -7,9 +7,7 @@
 
   {% for program in programs %}
     <section class="research-program research-program--{{ program.size }}" id="{{ program.title | slugify }}">
-      <div class="research-program__header">
-        <h3 class="research-program__title">{{ program.title }}</h3>
-      </div>
+      <h3 class="research-program__title">{{ program.headline | default: program.title }}</h3>
 
       <p class="research-program__question"><strong>Research questions:</strong> {{ program.research_question }}</p>
 

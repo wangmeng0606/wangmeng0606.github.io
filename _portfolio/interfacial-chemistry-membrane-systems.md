@@ -2,6 +2,7 @@
 title: "Interfacial Chemistry & Membrane Systems"
 collection: portfolio
 program: true
+headline: "Membrane surface chemistry to control fouling and mineral scaling in reverse osmosis"
 program_order: 2
 program_status: "Current research"
 size: "large"

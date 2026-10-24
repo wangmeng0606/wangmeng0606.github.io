@@ -1,6 +1,6 @@
 /* Highlight the navigation link of the section currently in view on the one-page home. */
 (function () {
-  var links = Array.prototype.slice.call(document.querySelectorAll('.greedy-nav .visible-links a[href*="#"]'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.masthead a[href*="#"]'));
   if (!links.length) return;
 
   var sections = links

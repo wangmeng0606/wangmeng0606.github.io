@@ -1710,3 +1710,91 @@ html { scroll-behavior: smooth; }
 /* "Under Review / In Preparation" heading in black. */
 .publication-year-group--in-prep .publication-year-heading,
 .site-section .publication-year-group--in-prep .publication-year-heading { color: $accent-dark; }
+
+/* ==========================================================================
+   Phone / narrow screens. Keep this block last so it overrides the desktop
+   rules above: single-column Research cards, always-visible navigation.
+   ========================================================================== */
+@media (max-width: 900px) {
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .research-program__layout .research-carousel,
+  .research-program__layout .research-program__contribution,
+  .research-program__layout .research-program__findings { grid-column: 1; grid-row: auto; }
+  .research-program__layout .research-carousel { padding: 0.75rem; }
+  .research-program__layout .research-carousel__track { height: 260px; }
+  .research-program__layout .research-program__contribution { line-height: 1.7; }
+  .research-program__question,
+  .research-program__contribution,
+  .research-program__findings ul { font-size: 1.0625rem; }
+}
+
+@media (max-width: 700px) {
+  /* Navigation: a fixed row of links replaces the collapsing desktop menu */
+  .greedy-nav { display: none !important; }
+  .site-nav-mobile { display: flex !important; }
+  .masthead__inner-wrap { padding-left: 1rem; padding-right: 0.5rem; }
+  .site-section { padding-left: 0; padding-right: 0; }
+  .research-program, .research-program--compact { padding: 1.25rem 0; }
+  .research-program__layout .research-carousel__track { height: 230px; }
+  .research-program__title { font-size: 1.375rem; }
+}
+
+.site-nav-mobile { display: none; align-items: center; gap: 0.25rem; width: 100%; }
+.site-nav-mobile a { padding: 0.55rem 0.5rem; color: $ink; font-size: 0.9375rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid transparent; }
+.site-nav-mobile a.is-current { color: $accent-dark; border-bottom-color: $accent-dark; }
+.site-nav-mobile .site-nav-mobile__brand { margin-right: auto; padding-left: 0; font-size: 1.0625rem; font-weight: 700; border-bottom: 0; }
+
+/* ==========================================================================
+   Research (final): headline on top, figure moved up beside the text.
+   The old project-name column is gone; each project has a descriptive headline.
+   ========================================================================== */
+.research-program,
+.research-program--compact {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  grid-template-rows: auto auto auto 1fr;
+  column-gap: 2.5rem;
+  row-gap: 0.85rem;
+}
+.research-program__title { grid-column: 1; grid-row: 1; margin: 0; font-size: 1.5rem; line-height: 1.3; font-weight: 600; }
+.research-program--compact .research-program__title { font-size: 1.5rem; }
+.research-program__question { grid-column: 1; grid-row: 2; padding-bottom: 0.85rem; }
+.research-program__layout { display: contents; }
+.research-program__layout .research-program__contribution { grid-column: 1; grid-row: 3; margin: 0; }
+.research-program__layout .research-program__findings { grid-column: 1; grid-row: 4; align-self: start; margin-top: 0.5rem; }
+.research-program__layout .research-carousel {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: start;
+  position: sticky;
+  top: 5.5rem;
+}
+.research-program__layout .research-carousel__track { height: 340px; }
+
+@media (max-width: 900px) {
+  .research-program,
+  .research-program--compact { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .research-program__title,
+  .research-program__question,
+  .research-program__layout .research-program__contribution,
+  .research-program__layout .research-program__findings,
+  .research-program__layout .research-carousel { grid-column: 1; grid-row: auto; position: static; }
+  .research-program__layout .research-carousel__track { height: 260px; }
+}
+@media (max-width: 700px) {
+  .research-program__title,
+  .research-program--compact .research-program__title { font-size: 1.25rem; }
+  .research-program__layout .research-carousel__track { height: 230px; }
+}
+
+/* Key findings run full width under both columns so the figure column has no blank tail. */
+.research-program,
+.research-program--compact { grid-template-rows: auto auto auto auto; }
+.research-program__layout .research-program__findings { grid-column: 1 / -1; grid-row: 4; margin-top: 0.6rem; }
+.research-program__layout .research-carousel { grid-row: 1 / span 3; position: static; align-self: stretch; }
+.research-program__layout .research-program__contribution { line-height: 1.8; }
+@media (max-width: 900px) {
+  .research-program__layout .research-program__findings,
+  .research-program__layout .research-carousel,
+  .research-program__layout .research-program__contribution { grid-column: 1; grid-row: auto; }
+  .research-program__layout .research-program__contribution { line-height: 1.7; }
+}

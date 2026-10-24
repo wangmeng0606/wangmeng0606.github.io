@@ -2,6 +2,7 @@
 title: "Molecular Thermodynamics & Ion Transport"
 collection: portfolio
 program: true
+headline: "Ion pairing and hydration in sulfate electrolytes: from spectroscopy to predictive thermodynamic models"
 program_order: 1
 program_status: "Current research"
 size: "large"
