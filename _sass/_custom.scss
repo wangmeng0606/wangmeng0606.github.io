@@ -1008,8 +1008,6 @@ button:focus-visible {
     min-height: 0;
   }
 
-  .section-heading h2,
-
   .section-heading--split {
     display: block;
   }
@@ -1062,12 +1060,7 @@ body { font-size: 1.0625rem; line-height: 1.7; }
 .button { font-weight: 600; }
 .text-link, .publication-link { font-size: 0.9375rem; font-weight: 500; }
 .eyebrow { letter-spacing: 0.1em; }
-.featured-publication__meta, .featured-news-item__meta { }
 .research-program__findings h3 { font-family: $sans-serif; }
-.research-program__question, .research-program__contribution,
-.research-program--compact .research-program__question,
-.research-program--compact .research-program__contribution,
-.research-program--compact .research-program__findings ul,
 
 /* Research and publication indexes share a centered reading column. */
 #main.wide-archive {
@@ -1129,14 +1122,12 @@ body { font-size: 1.0625rem; line-height: 1.7; }
   .publications-intro { flex-direction: column; gap: 0.75rem; }
   .page__title { font-size: 1.625rem; }
   .home-hero { padding: 1.5rem 0.5rem 2rem; }
-  .home-hero__lead { }
   .research-program { padding: 1.25rem; }
   .research-program--compact { padding: 1.25rem; }
 }
 
 /* Compact, neutral typography and homepage profile links. */
 .home-hero h1 { font-weight: 500; letter-spacing: -0.025em; }
-.section-heading h2 { }
 .research-program__title { font-weight: 600; }
 .publication-entry__title { font-weight: 600; }
 .page__footer-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
@@ -1150,21 +1141,11 @@ body { font-size: 1.0625rem; line-height: 1.7; }
 
 /* Type scale bump for IBM Plex Sans / Newsreader, and calmer research figures. */
 body { font-size: 1.125rem; }
-.home-hero__lead { }
 .page-intro__lead { font-size: 1.1875rem; }
-.focus-card p, .featured-news-item p { }
 .text-link, .publication-link { font-size: 1.0625rem; }
-.eyebrow { }
 .research-jumpnav { font-size: 0.9375rem; }
 .research-program__label { font-size: 0.75rem; }
 .research-program__title { font-weight: 500; }
-.research-program__findings h3 { }
-.research-program__question, .research-program__contribution,
-.research-program--compact .research-program__question,
-.research-program--compact .research-program__contribution,
-.research-program--compact .research-program__findings ul,
-.portrait-note span, .page__footer-copyright { }
-
 .research-carousel { max-width: 640px; margin: 0 auto 1.8rem; }
 .research-carousel__slide img {
   max-height: 340px;
@@ -1195,7 +1176,6 @@ body { font-size: 1.125rem; }
   letter-spacing: 0;
   text-transform: none;
 }
-.research-program--compact .research-program__findings h3,
 
 /* Program cards: one background, one body text style. */
 .research-program, .research-program--compact { background: $paper-deep; }
@@ -1207,10 +1187,6 @@ body { font-size: 1.125rem; }
   color: $ink-muted;
 }
 .research-program__question strong { color: $ink; font-weight: 600; }
-.research-program--compact .research-program__question,
-.research-program--compact .research-program__contribution,
-.research-program--compact .research-program__findings ul,
-.research-program--compact .research-program__findings h3,
 
 /* Larger navigation links. */
 .greedy-nav .visible-links li:first-child a { font-size: 1.25rem; }
@@ -1295,10 +1271,7 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.01em; }
 }
 
 /* Publications page type size. */
-.publication-entry__authors, .publication-entry__details { }
-.publication-year-heading { }
 @media (max-width: 700px) {
-  .publication-entry__authors, .publication-entry__details, .publication-entry__doi { }
 }
 
 /* One-page layout: Research and Publications sections live on the home page. */
@@ -1400,7 +1373,6 @@ html { scroll-behavior: smooth; }
   font-size: 0.8125rem;
   color: $accent;
 }
-.research-program--compact .research-program__title { }
 .research-program__question { grid-column: 2; grid-row: 1; margin: 0; max-width: none; padding-bottom: 0.9rem; border-bottom: 1px solid $border; }
 .research-program__layout { grid-column: 2; grid-row: 2; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 2rem; align-items: stretch; }
 .research-program__layout--text-only { grid-template-columns: minmax(0, 1fr); }
@@ -1467,7 +1439,6 @@ html { scroll-behavior: smooth; }
 .site-section .publication-year-heading { margin: 0 0 0.1rem; }
 .site-section .publication-entry { padding: 0.55rem 0 0.7rem; }
 .site-section .publication-entry__title { margin: 0 0 0.2rem; }
-.site-section .publication-entry__authors,
 .site-section .publication-entry__details { margin-top: 0.1rem; }
 .site-section .publication-year-list > .publication-entry:last-child { border-bottom: 0; padding-bottom: 0.3rem; }
 
@@ -1554,12 +1525,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* Research text: slightly larger. */
-.research-program__question,
-.research-program__contribution,
-.research-program__findings ul,
-.research-program--compact .research-program__question,
-.research-program--compact .research-program__contribution,
-.research-program__findings h4 { }
 
 /* "Under Review / In Preparation" heading in black. */
 .publication-year-group--in-prep .publication-year-heading,
@@ -1629,7 +1594,6 @@ html { scroll-behavior: smooth; }
   .research-program__layout .research-carousel__track { height: 260px; }
 }
 @media (max-width: 700px) {
-  .research-program__title,
   .research-program__layout .research-carousel__track { height: 230px; }
 }
 
