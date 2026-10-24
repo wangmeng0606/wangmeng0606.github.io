@@ -3,7 +3,7 @@ title: "Multiscale Transport & Predictive Modeling"
 collection: portfolio
 hidden: true
 program: true
-program_order: 3
+program_order: 4
 program_status: "Previous research"
 size: "compact"
 research_question: "How do supercritical carbon dioxide (CO₂) fluids move through fractures, pore networks, and wellbores under complex reservoir conditions, and how can predictive models capture that?"

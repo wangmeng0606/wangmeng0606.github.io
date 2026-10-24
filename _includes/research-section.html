@@ -55,7 +55,8 @@
                 {% endfor %}
               </ul>
             </div>
-          {% elsif program.findings_note %}
+          {% endif %}
+          {% if program.findings_note %}
             <p class="research-program__findings-note">{{ program.findings_note }}</p>
           {% endif %}
         </div>

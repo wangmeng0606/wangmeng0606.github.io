@@ -1521,7 +1521,7 @@ html { scroll-behavior: smooth; }
 .home-hero .eyebrow { margin-top: 0; }
 @media (max-width: 700px) {
   .home-main { margin-top: 0.5rem !important; }
-  .home-hero { padding-top: 0.75rem; }
+  .home-hero { padding-top: 0.75rem; padding-left: 0; padding-right: 0; }
 }
 
 /* Research text: slightly larger. */
@@ -1732,3 +1732,12 @@ html { scroll-padding-top: 6rem; }
 .featured-news-item h3                          { @include type(17, 16, 1.4); }
 .featured-news-item p                           { @include type(16, 15, 1.5); }
 .featured-news-item__meta                       { @include type(14, 13, 1.5); }
+
+/* Home News: scrollable list so every item is reachable without a long page. */
+.featured-news {
+  max-height: min(30rem, 70vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: $border-color transparent;
+}

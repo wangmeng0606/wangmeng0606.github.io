@@ -6,8 +6,8 @@ date: 2024-09-13
 venue: 'Water Research'
 paperurl: 'https://doi.org/10.1016/j.watres.2024.122439'
 citation: 'Meng Wang, Xiaobing Zuo, Raynara M. S. Jacovone, Ryan O''Hara, Abhishek N. Mondal, Ayse Asatekin, Debora F. Rodrigues, (2024). &quot;Influence of zwitterionic amphiphilic copolymers on heterogeneous gypsum formation: a promising approach for scaling resistance.&quot; <i>Water Research 266, 122439</i>.'
-authors_short: '<strong>Wang, M.</strong>, Zuo, X., Jacovone, R.M.S., O''Hara, R., Mondal, A.N., Asatekin, A., Rodrigues, D. F.'
-authors_full: '<strong>Wang, M.</strong>, Zuo, X., Jacovone, R.M.S., O''Hara, R., Mondal, A.N., Asatekin, A., & Rodrigues, D. F.'
+authors_short: '<strong>Wang, M.</strong>, Zuo, X., Jacovone, R. M. S., O''Hara, R., Mondal, A. N., Asatekin, A., Rodrigues, D. F.'
+authors_full: '<strong>Wang, M.</strong>, Zuo, X., Jacovone, R. M. S., O''Hara, R., Mondal, A. N., Asatekin, A., & Rodrigues, D. F.'
 featured: true
 
 ---
