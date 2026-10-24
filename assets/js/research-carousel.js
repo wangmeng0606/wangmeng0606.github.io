@@ -1,6 +1,5 @@
 /* Lightweight, dependency-free dot carousel for the /portfolio/ research figures.
-   Dots are the primary visible navigation; clicking the left/right half of the
-   image is an optional shortcut to the previous/next slide. Autoplay advances
+   Dots are the navigation; clicking an image opens it full size (lightbox.js). Autoplay advances
    on a timer, loops, and resets whenever the user interacts manually. */
 (function () {
   var AUTOPLAY_DELAY_MS = 2000;
@@ -55,6 +54,9 @@
       }
       stopAutoplay();
       timer = window.setInterval(function () {
+        if (document.documentElement.classList.contains('lightbox-open')) {
+          return;
+        }
         goTo(activeIndex() + 1);
       }, AUTOPLAY_DELAY_MS);
     }
@@ -66,21 +68,6 @@
     dots.forEach(function (dot) {
       dot.addEventListener('click', function () {
         goTo(parseInt(dot.getAttribute('data-slide-index'), 10));
-        restartAutoplay();
-      });
-    });
-
-    slides.forEach(function (slide) {
-      var img = slide.querySelector('img');
-      if (!img) {
-        return;
-      }
-
-      img.addEventListener('click', function (event) {
-        var rect = img.getBoundingClientRect();
-        var clickX = event.clientX - rect.left;
-        var goingNext = clickX > rect.width / 2;
-        goTo(activeIndex() + (goingNext ? 1 : -1));
         restartAutoplay();
       });
     });
