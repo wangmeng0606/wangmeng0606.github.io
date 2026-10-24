@@ -21,7 +21,7 @@
   {% assign in_prep_items = site.publications | where_exp: "p", "p.status" | where_exp: "p", "p.hidden != true" %}
   {% if in_prep_items.size > 0 %}
     <section class="publication-year-group publication-year-group--in-prep" aria-labelledby="in-preparation">
-      <h2 class="publication-year-heading" id="in-preparation">Under Review / In Preparation</h2>
+      <h2 class="publication-year-heading" id="in-preparation">In Preparation</h2>
       <ul class="publication-year-list">
         {% assign sorted_in_prep = in_prep_items | sort: "date" | reverse %}
         {% for publication in sorted_in_prep %}

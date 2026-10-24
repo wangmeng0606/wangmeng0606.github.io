@@ -9,7 +9,7 @@
   <p class="publication-entry__authors">{{ include.publication.authors_short }}</p>
   <p class="publication-entry__details">
     <i>{% if include.publication.venue and include.publication.venue != "" %}{{ include.publication.venue }}{% else %}TBD{% endif %}</i>
-    · {{ include.publication.date | date: "%Y" }}{% if include.publication.note %} · {{ include.publication.note }}{% endif %}{% if include.publication.status %} · {{ include.publication.status }}{% endif %}
+    {% unless include.publication.status %}· {{ include.publication.date | date: "%Y" }}{% endunless %}{% if include.publication.note %} · {{ include.publication.note }}{% endif %}{% if include.publication.status %} · {{ include.publication.status }}{% endif %}
     {% if include.publication.paperurl and include.publication.paperurl != "" %}
       <a class="publication-entry__doi" href="{{ include.publication.paperurl }}" aria-label="Publisher link for {{ include.publication.title | escape }}">{% if include.publication.paperurl contains 'doi.org' %}DOI{% else %}Publisher{% endif %} <span aria-hidden="true">↗</span></a>
     {% endif %}

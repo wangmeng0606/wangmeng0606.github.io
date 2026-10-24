@@ -12,17 +12,17 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-heading">
   <div class="home-hero__content">
     <p class="eyebrow">Ion Pairing · Thermodynamic Modeling · Material Interfaces · Water &amp; Energy</p>
-    <h1 id="home-heading">Understanding molecular interactions</h1>
-    <p class="home-hero__subheading">Designing next-generation separation and energy systems</p>
+    <h1 id="home-heading">Ions, Interfaces, and Separation Processes</h1>
+    <p class="home-hero__subheading">Bridging Molecular Science, Materials, and Environmental Engineering</p>
     <div class="home-hero__lead">
     <p>Meng Wang is a Postdoctoral Researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural
   and Environmental Engineering</a> at The University of Texas at Austin, working with
   <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>.
-  He received his Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
+  I received my Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
   in 2023, working with
   <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Dr. Debora F. Rodrigues</a>.
   </p>
-  <p>His research investigates how molecular interactions in aqueous and interfacial systems govern speciation, transport, and separation performance. He combines spectroscopy, thermodynamic modeling, and multiscale experiments to connect molecular-scale behavior with membrane separations, resource recovery, and scaling/fouling control at the water–energy nexus.</p>
+  <p>My esearch investigates how molecular interactions in aqueous and interfacial systems govern speciation, transport, and separation performance. I combines spectroscopy, thermodynamic modeling, and multiscale experiments to connect molecular-scale behavior with membrane separations, resource recovery, and scaling/fouling control at the water–energy nexus.</p>
   </div>
     <div class="home-hero__actions">
       <a class="button button--primary" href="#research">Explore my research</a>
