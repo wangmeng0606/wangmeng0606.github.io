@@ -1,6 +1,7 @@
 ---
 title: "A coupled model for predicting flowing temperature and pressure distribution in drilling ultra-short radius radial wells"
 collection: publications
+hidden: true
 permalink: /publication/2016-08-22-A coupled model for predicting flowing temperature and pressure distribution in drilling ultra-short radius radial wells
 date: 2016-08-22
 venue: 'IADC/SPE Asia Pacific Drilling Technology Conference (SPE-180597-MS)'

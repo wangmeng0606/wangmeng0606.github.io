@@ -1,6 +1,7 @@
 ---
 title: "Mechanism study on rock breaking with supercritical carbon dioxide jet"
 collection: publications
+hidden: true
 permalink: /publication/2017-05-04-Mechanism study on rock breaking with supercritical carbon dioxide jet
 date: 2017-05-04
 venue: 'Atomization and Sprays'

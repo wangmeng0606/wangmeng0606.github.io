@@ -1,6 +1,7 @@
 ---
 title: "Experimental investigation on abrasive supercritical CO2 jet perforation"
 collection: publications
+hidden: true
 permalink: /publication/2018-09-24-Experimental investigation on abrasive supercritical CO2 jet perforation
 date: 2018-09-24
 venue: 'Journal of CO2 Utilization'

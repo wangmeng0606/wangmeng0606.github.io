@@ -1,6 +1,7 @@
 ---
 title: "Expulsive force in the development of CO2 sequestration: application of SC-CO2 jet in oil and gas extraction"
 collection: publications
+hidden: true
 permalink: /publication/2019-03-01-Expulsive force in the development of CO2 sequestration application of SC-CO2 jet in oil and gas extraction
 date: 2019-03-01
 venue: 'Frontiers in Energy'

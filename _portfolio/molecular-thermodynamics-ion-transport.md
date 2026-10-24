@@ -9,9 +9,8 @@ size: "large"
 research_question: "How can we accurately determine ion pairing and ion–solvent interactions in aqueous/co-solvent systems, and how can this molecular-scale behavior be captured in a predictive thermodynamic model?"
 
 key_findings:
-  - "Combined Raman and dielectric spectroscopy revealed ion-specific ion-pairing behavior in sulfate electrolytes and showed that methanol enhances solvent-shared ion pair (SIP) and contact ion pair (CIP) formation."
-  - "A thermodynamically consistent Pitzer framework linked ion pairing with activity coefficients to improve speciation and thermodynamic predictions at elevated ionic strengths."
-  - "An extended Pitzer framework incorporating spectroscopically constrained ion pairing revealed cation-specific deviations in ion activities at high ionic strengths."
+  - "Raman and dielectric spectroscopy revealed ion-specific ion pairing in sulfate electrolytes; methanol enhances solvent-shared (SIP) and contact (CIP) ion-pair formation."
+  - "A thermodynamically consistent extended Pitzer framework with spectroscopically constrained ion pairing improved speciation and activity predictions at elevated ionic strengths and revealed cation-specific deviations in ion activities."
 
 # findings_note: "Manuscripts in preparation."
 
@@ -33,8 +32,4 @@ related_publications:
   - /publication/2026-09-01-Unraveling Ion Pairing and Hydration Structure of Sulfate Salts in Aqueous Solution From Monovalent to Trivalent Ions
   - /publication/2026-01-02-Incorporating ion pairing into an extended Pitzer model for activity coefficients
 ---
-Ion pairing governs the chemical speciation that underlies many environmental processes, including contaminant transport, membrane separation, mineral precipitation, and the electro-catalytic efficiency of electrochemical treatment in settings such as wastewater treatment, critical mineral recovery, and energy storage systems, where ion concentrations are often high.
-
-Yet these molecular interactions are often neglected or treated implicitly in conventional thermodynamic models.
-
-I use Raman and dielectric spectroscopy to resolve ion pairing and hydration structure in sulfate electrolytes spanning monovalent to trivalent cations, then incorporate these effects into an extended Pitzer model for activity coefficients, thus connecting molecular-scale speciation to a predictive thermodynamic framework for ion transport in engineered water and energy systems.
+Ion pairing controls speciation in membrane separation, mineral precipitation, and electrochemical treatment, yet it is often neglected in conventional thermodynamic models. I use Raman and dielectric spectroscopy to resolve ion pairing and hydration in sulfate electrolytes (monovalent to trivalent cations) and incorporate them into an extended Pitzer model for activity coefficients, linking molecular-scale speciation to predictive ion transport in water and energy systems.

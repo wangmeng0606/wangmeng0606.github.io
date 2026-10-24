@@ -1,6 +1,7 @@
 ---
 title: "Multiscale Transport & Predictive Modeling"
 collection: portfolio
+hidden: true
 program: true
 program_order: 3
 program_status: "Previous research"
@@ -27,6 +28,4 @@ related_publications:
   - /publication/2017-02-01-A unified model for wellbore flow and heat transfer in pure CO2 injection for geological sequestration, EOR, and fracturing operations
   
 ---
-Efficient CO₂-based reservoir stimulation requires understanding how multiphase flow, heat transfer, and particle transport evolve across complex fracture networks—challenges that are critical for improving resource recovery while reducing water use.
-
-Earlier in my research career, I used computational fluid dynamics and multiscale semi-analytical modeling to characterize wellbore flow and heat transfer during CO₂-based injection, and fracturing, and to study proppant transport, and CO₂-enhanced recovery in fractured and shale reservoirs.
+CO₂-based reservoir stimulation requires understanding multiphase flow, heat transfer, and particle transport in complex fracture networks to improve resource recovery while reducing water use. I used computational fluid dynamics and multiscale semi-analytical modeling to study wellbore flow and heat transfer during CO₂ injection and fracturing, proppant transport, and CO₂-enhanced recovery in fractured and shale reservoirs.

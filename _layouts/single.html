@@ -58,10 +58,11 @@ layout: default
       </section>
 
       <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% if page.collection == 'publications' %}
+          <a class="text-link" href="{{ base_path }}/#publications">&larr; Back to Publications</a>
+        {% else %}
+          <a class="text-link" href="{{ base_path }}/#news">&larr; Back to News</a>
         {% endif %}
-        {% include page__taxonomy.html %}
       </footer>
 
       {% if page.share %}{% include social-share.html %}{% endif %}

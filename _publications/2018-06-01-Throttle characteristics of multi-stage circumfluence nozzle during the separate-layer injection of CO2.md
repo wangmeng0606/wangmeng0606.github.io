@@ -1,6 +1,7 @@
 ---
 title: "Throttle characteristics of multi-stage circumfluence nozzle during the separate-layer injection of CO2"
 collection: publications
+hidden: true
 permalink: /publication/2018-06-01-Throttle characteristics of multi-stage circumfluence nozzle during the separate-layer injection of CO2
 date: 2018-06-01
 venue: 'Petroleum'

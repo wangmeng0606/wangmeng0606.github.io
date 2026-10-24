@@ -1,4 +1,0 @@
-<li>
-  {{ include.pub.authors_full }} ({{ include.pub.date | date: "%Y" }}). {{ include.pub.title }}. <i>{% if include.pub.venue and include.pub.venue != "" %}{{ include.pub.venue }}{% else %}TBD{% endif %}</i>{% if include.pub.note %} ({{ include.pub.note }}){% endif %}{% if include.pub.status %} ({{ include.pub.status }}){% endif %}.
-  {% if include.pub.paperurl and include.pub.paperurl != "" %}<a class="publication-entry__doi" href="{{ include.pub.paperurl }}" aria-label="Publisher link for {{ include.pub.title | escape }}">{% if include.pub.paperurl contains 'doi.org' %}DOI{% else %}Publisher{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
-</li>

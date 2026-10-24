@@ -1,6 +1,7 @@
 ---
 title: "Analysis of rock fracture mechanism caused by supercritical CO2"
 collection: publications
+hidden: true
 permalink: /publication/2018-10-01-Analysis of rock fracture mechanism caused by supercritical CO2
 date: 2018-10-01
 venue: 'Rock and Soil Mechanics (岩土力学)'

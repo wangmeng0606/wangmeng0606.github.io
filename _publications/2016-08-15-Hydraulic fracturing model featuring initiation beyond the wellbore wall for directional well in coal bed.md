@@ -1,6 +1,7 @@
 ---
 title: "Hydraulic fracturing model featuring initiation beyond the wellbore wall for directional well in coal bed"
 collection: publications
+hidden: true
 permalink: /publication/2016-08-15-Hydraulic fracturing model featuring initiation beyond the wellbore wall for directional well in coal bed
 date: 2016-08-15
 venue: 'Journal of Geophysics and Engineering'

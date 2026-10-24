@@ -5,9 +5,9 @@ permalink: /publication/2026-01-04-Spectroscopic Insights into Ion Pairing in Su
 date: 2026-01-01
 venue: 'Environmental Science & Technology'
 paperurl: ''
-citation: 'M Wang, Z Huang, J Cui, N Vinh, B Freeman, L Katz, Spectroscopic Insights into Ion Pairing in Sulfate Electrolytes: Implications for Sorption and Transport in Aqueous Systems, Environmental Science & Technology, 2026 (Submitted).'
-authors_short: '<strong>Wang, M.</strong>, Huang, Z., Cui, J., Vinh, N., Freeman, B., Katz, L.'
-authors_full: '<strong>Wang, M.</strong>, Huang, Z., Cui, J., Vinh, N., Freeman, B., & Katz, L.'
-status: 'Under review'
+citation: 'M Wang, J R Cui, Z R Huang, B Freeman, N Q Vinh, L E Katz, Spectroscopic Insights into Ion Pairing in Sulfate Electrolytes: Implications for Sorption and Transport in Aqueous Systems, Environmental Science & Technology, 2026 (Accepted).'
+authors_short: '<strong>Wang, M.</strong>, Cui, J.R., Huang, Z.R., Freeman, B., Vinh, N.Q., Katz, L.E.'
+authors_full: '<strong>Wang, M.</strong>, Cui, J.R., Huang, Z.R., Freeman, B., Vinh, N.Q., & Katz, L.E.'
+note: 'Accepted'
 ---
-This manuscript is currently under review. A full abstract will be added once available.
+This manuscript has been accepted. A full abstract will be added once available.

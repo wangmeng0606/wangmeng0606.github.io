@@ -1,6 +1,7 @@
 ---
 title: "A unified model for wellbore flow and heat transfer in pure CO2 injection for geological sequestration, EOR, and fracturing operations"
 collection: publications
+hidden: true
 permalink: /publication/2017-02-01-A unified model for wellbore flow and heat transfer in pure CO2 injection for geological sequestration, EOR, and fracturing operations
 date: 2017-02-01
 venue: 'International Journal of Greenhouse Gas Control'

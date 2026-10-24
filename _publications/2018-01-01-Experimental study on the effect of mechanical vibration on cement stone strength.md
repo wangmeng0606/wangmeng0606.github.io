@@ -1,6 +1,7 @@
 <!-- ---
 title: "Experimental study on the effect of mechanical vibration on cement stone strength"
 collection: publications
+hidden: true
 permalink: /publication/2018-01-01-Experimental study on the effect of mechanical vibration on cement stone strength
 date: 2018-01-01
 venue: 'Natural Gas Exploration and Development (天然气勘探与开发)'

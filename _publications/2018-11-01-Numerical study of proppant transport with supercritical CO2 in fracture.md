@@ -1,6 +1,7 @@
 ---
 title: "Numerical study of proppant transport with supercritical CO2 in fracture"
 collection: publications
+hidden: true
 permalink: /publication/2018-11-01-Numerical study of proppant transport with supercritical CO2 in fracture
 date: 2018-11-01
 venue: 'China Petroleum Machinery (石油机械)'

@@ -1,6 +1,7 @@
 ---
 title: "Numerical study of supercritical CO2 and proppant transport in different geometrical fractures"
 collection: publications
+hidden: true
 permalink: /publication/2018-07-10-Numerical study of supercritical CO2 and proppant transport in different geometrical fractures
 date: 2018-07-10
 venue: 'Greenhouse Gases: Science and Technology'

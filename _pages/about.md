@@ -12,20 +12,20 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-heading">
   <div class="home-hero__content">
     <p class="eyebrow">Solution/Interfacial Chemistry · Materials and Modeling · Water &amp; Energy</p>
-    <h1 id="home-heading">Understanding molecular interactions and transport</h1>
+    <h1 id="home-heading">Understanding molecular interactions</h1>
     <p class="home-hero__subheading">Designing next-generation separation and energy systems</p>
     <div class="home-hero__lead">
     <p>Meng Wang is a Postdoctoral Researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural
   and Environmental Engineering</a> at The University of Texas at Austin, working with
   <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>.
-  His research advances a molecular-level understanding of ion transport and separation in aqueous solutions and at interfaces, combining spectroscopy and thermodynamic modeling to address key challenges in membrane separation and the broader water-energy nexus.</p>
-    <p>He received his Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
+  He received his Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
   in 2023, working with
-  <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Prof. Debora F. Rodrigues</a>.</p>
+  <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Dr. Debora F. Rodrigues</a>.
+  His research investigates how molecular interactions in aqueous and interfacial systems govern speciation, transport, and separation performance. He combines spectroscopy, thermodynamic modeling, and multiscale experiments to connect molecular-scale behavior with membrane separations, resource recovery, and scaling/fouling control at the water–energy nexus.</p>
   </div>
     <div class="home-hero__actions">
-      <a class="button button--primary" href="{{ site.baseurl }}/portfolio/">Explore my research</a>
-      <a class="button button--secondary" href="{{ site.baseurl }}/publications/">View publications</a>
+      <a class="button button--primary" href="#research">Explore my research</a>
+      <a class="button button--secondary" href="#publications">View publications</a>
       <a class="button button--secondary" href="{{ site.baseurl }}{{ site.author.cv_pdf }}">Download CV</a>
     </div>
     <!-- <div class="home-hero__profiles">
@@ -54,67 +54,23 @@ redirect_from:
   </div>
   <div class="intro-copy">
     <p>Meng Wang is a postdoctoral researcher in the Department of Civil, Architectural and Environmental Engineering at The University of Texas at Austin, working with <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>. My current work focuses on characterizing ion association and hydration in sulfate electrolyte systems using Raman and dielectric spectroscopy, and their role in predictive Pitzer thermodynamic modeling.</p>
-    <p>Meng Wang earned his Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Prof. Debora F. Rodrigues</a>. His doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination. Before that, he received his bachelor's degree from Northestearn Petroleum University and master's degree from China University of Petroleum in China. </p>
+    <p>Meng Wang earned his Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Dr. Debora F. Rodrigues</a>. His doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination. Before that, he received his bachelor's degree from Northestearn Petroleum University and master's degree from China University of Petroleum in China. </p>
   
   </div>
 </section> -->
 
-<section class="home-section" aria-labelledby="focus-heading">
-  <div class="section-heading section-heading--wide">
-    <p class="eyebrow">Research focus</p>
-    <h2 id="focus-heading">Three connected questions guide my work.</h2>
-    <p class="section-heading__lead">Together, these questions trace one research arc — from molecular-scale ion pairing and interfacial chemistry to membrane materials that improve water and energy sustainability.</p>
-  </div>
-  <div class="focus-grid">
-    <article class="focus-card">
-      <span class="focus-card__number">01</span>
-      <h3>Ion transport</h3>
-      <p>How hydration and ion pairing shape transport through polymeric materials.</p>
-    </article>
-    <article class="focus-card">
-      <span class="focus-card__number">02</span>
-      <h3>Interfacial chemistry</h3>
-      <p>How surface chemistry influences mineral nucleation, growth, and adhesion.</p>
-    </article>
-    <article class="focus-card">
-      <span class="focus-card__number">03</span>
-      <h3>Membrane &amp; separation systems</h3>
-      <p>How material design can reduce scaling and biofouling in water treatment and separation.</p>
-    </article>
-  </div>
-</section>
+{::nomarkdown}
+{% include research-section.html %}
+{:/nomarkdown}
 
-<section class="home-section" aria-labelledby="publications-heading">
+{::nomarkdown}
+{% include publications-section.html %}
+{:/nomarkdown}
+
+<section class="home-section" id="news" aria-labelledby="news-heading">
   <div class="section-heading section-heading--split">
     <div>
-      <p class="eyebrow">Selected work</p>
-      <h2 id="publications-heading">Selected publications</h2>
-    </div>
-    <a class="text-link" href="{{ site.baseurl }}/publications/">View all publications <span aria-hidden="true">→</span></a>
-  </div>
-
-  <div class="featured-publications">
-    {% assign published_only = site.publications | where_exp: "p", "p.status == nil" %}
-    {% assign featured_only = published_only | where_exp: "p", "p.featured == true" %}
-    {% assign featured_publications = featured_only | sort: "date" | reverse %}
-    {% for publication in featured_publications %}
-      <article class="featured-publication">
-        <div class="featured-publication__meta">
-          <span>{{ publication.date | date: "%Y" }}</span>
-          <span>{{ publication.venue }}</span>
-        </div>
-        <h3><a href="{{ site.baseurl }}{{ publication.url }}">{{ publication.title }}</a></h3>
-        <a class="publication-link" href="{{ publication.paperurl }}">DOI / publisher <span aria-hidden="true">↗</span></a>
-      </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="home-section" aria-labelledby="news-heading">
-  <div class="section-heading section-heading--split">
-    <div>
-      <p class="eyebrow">News</p>
-      <h2 id="news-heading">Latest news</h2>
+      <h2 id="news-heading">News</h2>
     </div>
     <a class="text-link" href="{{ site.baseurl }}/year-archive/">All news <span aria-hidden="true">→</span></a>
   </div>

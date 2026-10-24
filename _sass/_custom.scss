@@ -1426,3 +1426,287 @@ h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.01em; }
   .publication-entry__title { font-size: 1.125rem; }
   .publication-entry__authors, .publication-entry__details, .publication-entry__doi { font-size: 1rem; }
 }
+
+/* One-page layout: Research and Publications sections live on the home page. */
+html { scroll-behavior: smooth; }
+.site-section { padding: 3rem 1.5rem 0; scroll-margin-top: 4.5rem; border-top: 1px solid $border; margin-top: 3rem; }
+.home-section[id] { scroll-margin-top: 4.5rem; }
+.site-section > .section-heading { margin-bottom: 1.5rem; }
+.site-section > .section-heading h2 { margin: 0; font-size: 1.875rem; font-weight: 600; }
+.site-section .publication-years { margin-top: 0; }
+@media (max-width: 700px) {
+  .site-section { padding: 2rem 0.5rem 0; margin-top: 2rem; }
+  .site-section > .section-heading h2 { font-size: 1.625rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+/* Publication titles: regular weight everywhere (also the link inside). */
+.publication-entry__title,
+.publication-entry__title a { font-weight: 400; font-size: 1.3125rem; }
+@media (max-width: 700px) {
+  .publication-entry__title,
+  .publication-entry__title a { font-size: 1.1875rem; }
+}
+
+/* Research cards: text on the left, figure embedded on the right. */
+.research-program__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 42%);
+  gap: 1.75rem 2.25rem;
+  align-items: start;
+}
+.research-program__layout--text-only { grid-template-columns: minmax(0, 1fr); }
+.research-program__layout .research-carousel { grid-column: 2; grid-row: 1; max-width: none; margin: 0; }
+.research-program__layout .research-program__content { grid-column: 1; grid-row: 1; }
+.research-program__layout .research-carousel__slide img { max-height: 340px; width: auto; max-width: 100%; margin: 0 auto; }
+.research-program__layout .research-carousel__slide figcaption { font-size: 0.875rem; }
+.research-program__question { margin-bottom: 1.25rem; }
+.research-program__contribution { margin-bottom: 1.1rem; }
+.research-program__findings h4 { margin: 0 0 0.5rem; font-size: 1.0625rem; font-weight: 600; }
+@media (max-width: 900px) {
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); }
+  .research-program__layout .research-carousel,
+  .research-program__layout .research-program__content { grid-column: 1; grid-row: auto; }
+}
+
+/* Research cards: balance the figure against the text so no large blank areas remain. */
+.research-program { padding: 1.75rem 2rem; }
+.research-program__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 46%); align-items: center; gap: 1.5rem 2rem; }
+.research-program__layout .research-carousel { align-self: center; }
+.research-program__layout .research-carousel__slide img { max-height: 320px; }
+.research-program__layout .research-carousel__dots { margin-top: 0.5rem; }
+.research-program__findings { margin-bottom: 0; }
+.research-program__contribution { margin-bottom: 0.9rem; }
+.research-program__header { margin-bottom: 0.5rem; }
+.research-program__question { margin-bottom: 1rem; }
+.research-program { margin-bottom: 1.25rem; }
+@media (max-width: 900px) {
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); }
+  .research-program { padding: 1.25rem; }
+}
+
+/* Figure aligns with the top of the text and takes half the card width. */
+.research-program__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 50%); align-items: start; }
+.research-program__layout .research-carousel { align-self: start; }
+.research-program__layout .research-carousel__slide img { max-height: 360px; }
+@media (max-width: 900px) {
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ==========================================================================
+   Research: open, ruled layout. No cards; each project sits under a rule with
+   its title in a narrow left column and the content to the right.
+   ========================================================================== */
+.page-intro { border-bottom: 0; margin-bottom: 1.25rem; padding-bottom: 0; }
+.page-intro__lead { max-width: 900px; padding: 0; text-align: left; hyphens: manual; }
+
+.research-program,
+.research-program--compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3.2fr);
+  column-gap: 2.5rem;
+  row-gap: 0.9rem;
+  margin: 0;
+  padding: 1.5rem 0 1.75rem;
+  border: 0;
+  border-top: 1px solid $ink;
+  border-radius: 0;
+  background: transparent;
+}
+.research-program:last-of-type { border-bottom: 1px solid $border; }
+.research-program__header {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+}
+.research-program__label {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 0.8125rem;
+  color: $accent;
+}
+.research-program__title { font-size: 1.5rem; line-height: 1.25; }
+.research-program--compact .research-program__title { font-size: 1.5rem; }
+.research-program__question { grid-column: 2; grid-row: 1; margin: 0; max-width: none; padding-bottom: 0.9rem; border-bottom: 1px solid $border; }
+.research-program__layout { grid-column: 2; grid-row: 2; grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); gap: 2rem; align-items: stretch; }
+.research-program__layout--text-only { grid-template-columns: minmax(0, 1fr); }
+
+/* The figure sits in a framed panel as tall as the text, so no blank gaps remain. */
+.research-program__layout .research-carousel {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid $border;
+  background: $white;
+}
+.research-program__layout .research-carousel__slide img { max-height: 300px; border: 0; border-radius: 0; }
+.research-program__layout .research-carousel__slide figcaption { margin-top: 0.5rem; }
+.research-program__layout .research-carousel__dots { margin-top: 0.6rem; }
+
+.research-program__findings { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid $border; }
+.research-program__findings h4 { margin-bottom: 0.4rem; }
+
+@media (max-width: 900px) {
+  .research-program,
+  .research-program--compact { grid-template-columns: minmax(0, 1fr); }
+  .research-program__header,
+  .research-program__question,
+  .research-program__layout { grid-column: 1; grid-row: auto; }
+  .research-program__header { flex-direction: row; align-items: baseline; flex-wrap: wrap; gap: 0.5rem 0.9rem; }
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); }
+  .research-program__layout .research-carousel,
+  .research-program__layout .research-program__content { grid-column: 1; grid-row: auto; }
+}
+
+/* Overview text and figure side by side; key findings run full width beneath. */
+.research-program,
+.research-program--compact { grid-template-columns: minmax(0, 0.8fr) minmax(0, 3.4fr); }
+.research-program__layout { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 0.25rem 2rem; }
+.research-program__layout .research-program__content { display: contents; }
+.research-program__layout .research-program__contribution { grid-column: 1; grid-row: 1; margin: 0; }
+.research-program__layout .research-carousel { grid-column: 2; grid-row: 1; }
+.research-program__layout .research-program__findings { grid-column: 1 / -1; grid-row: 2; margin-top: 0.9rem; }
+.research-program__layout .research-carousel__slide img { max-height: 230px; }
+.research-program__layout--text-only .research-program__contribution,
+.research-program__layout--text-only .research-program__findings { grid-column: 1; }
+@media (max-width: 900px) {
+  .research-program,
+  .research-program--compact { grid-template-columns: minmax(0, 1fr); }
+  .research-program__layout { grid-template-columns: minmax(0, 1fr); }
+  .research-program__layout .research-program__contribution,
+  .research-program__layout .research-carousel,
+  .research-program__layout .research-program__findings { grid-column: 1; grid-row: auto; }
+}
+
+/* Shorter overview text leaves room for a larger figure. */
+.research-program__layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.research-program__layout .research-carousel__slide img { max-height: 300px; }
+
+/* Publications: tighter vertical rhythm. */
+.site-section .publication-year-group,
+.site-section .publication-year-group--in-prep { padding: 0.9rem 0 0; margin-top: 0; }
+.site-section .publication-year-heading { margin: 0 0 0.1rem; font-size: 1.25rem; line-height: 1.3; }
+.site-section .publication-entry { padding: 0.55rem 0 0.7rem; line-height: 1.45; }
+.site-section .publication-entry__title { margin: 0 0 0.2rem; line-height: 1.35; }
+.site-section .publication-entry__authors,
+.site-section .publication-entry__details { line-height: 1.45; }
+.site-section .publication-entry__details { margin-top: 0.1rem; }
+.site-section .publication-year-list > .publication-entry:last-child { border-bottom: 0; padding-bottom: 0.3rem; }
+
+/* Fixed-size figure stage: slides are stacked and cross-fade, so changing the
+   image never changes the card height or moves the text. */
+.research-program__layout .research-carousel__track { position: relative; width: 100%; height: 300px; }
+.research-program__layout .research-carousel__slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 260ms ease, visibility 0s linear 260ms;
+  animation: none;
+}
+.research-program__layout .research-carousel__slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 260ms ease;
+  animation: none;
+}
+.research-program__layout .research-carousel__slide img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100% - 3.2rem);
+  margin: 0 auto;
+  object-fit: contain;
+}
+.research-program__layout .research-carousel__slide figcaption {
+  flex: 0 0 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow: hidden;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .research-program__layout .research-carousel__track { height: 280px; }
+}
+
+/* Tighter gap between the intro block and the Research section. */
+.home-hero { padding-bottom: 1.25rem; }
+#research.site-section { margin-top: 0; padding-top: 1.75rem; }
+.site-section > .section-heading { margin-bottom: 1rem; }
+@media (max-width: 700px) {
+  .home-hero { padding-bottom: 1rem; }
+  #research.site-section { padding-top: 1.25rem; }
+}
+
+/* Tighter gap between Research and Publications. */
+#research .research-program:last-of-type { padding-bottom: 1.25rem; }
+#publications.site-section { margin-top: 0.75rem; padding-top: 1.5rem; }
+@media (max-width: 700px) {
+  #publications.site-section { margin-top: 0.5rem; padding-top: 1.25rem; }
+}
+
+/* Overview text: looser leading so it fills the height next to the figure. */
+.research-program__layout .research-program__contribution { line-height: 2; }
+@media (max-width: 900px) {
+  .research-program__layout .research-program__contribution { line-height: 1.7; }
+}
+
+/* Hero eyebrow: larger, with more space above. */
+.home-hero .eyebrow { font-size: 0.9375rem; letter-spacing: 0.08em; margin-top: 1.25rem; margin-bottom: 0.75rem; }
+@media (max-width: 700px) {
+  .home-hero .eyebrow { font-size: 0.8125rem; margin-top: 0.75rem; }
+}
+
+/* Tighter space above the News section. */
+#news.home-section { padding-top: 1.5rem; border-top: 1px solid $border-color; }
+@media (max-width: 700px) {
+  #news.home-section { padding-top: 1.25rem; }
+}
+
+/* Pull the intro block up toward the navigation bar. */
+.home-main { margin-top: 0.75rem !important; }
+.home-hero { padding-top: 1rem; align-items: start; }
+.home-hero .eyebrow { margin-top: 0; }
+@media (max-width: 700px) {
+  .home-main { margin-top: 0.5rem !important; }
+  .home-hero { padding-top: 0.75rem; }
+}
+
+/* Research text: slightly larger. */
+.research-program__question,
+.research-program__contribution,
+.research-program__findings ul,
+.research-program--compact .research-program__question,
+.research-program--compact .research-program__contribution,
+.research-program--compact .research-program__findings ul { font-size: 1.125rem; }
+.research-program__findings h4 { font-size: 1.125rem; }
+.research-program__layout .research-program__contribution { line-height: 1.9; }
+@media (max-width: 900px) {
+  .research-program__layout .research-program__contribution { line-height: 1.7; }
+}
+
+/* "Under Review / In Preparation" heading in black. */
+.publication-year-group--in-prep .publication-year-heading,
+.site-section .publication-year-group--in-prep .publication-year-heading { color: $accent-dark; }

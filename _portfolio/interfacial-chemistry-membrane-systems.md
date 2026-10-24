@@ -7,9 +7,9 @@ program_status: "Current research"
 size: "large"
 research_question: "How does membrane surface chemistry, spanning engineered synthetic coatings to adsorbed natural biomolecular layers, govern the mechanism of membrane fouling and mineral scale formation"
 key_findings:
-  - "Zwitterionic amphiphilic copolymers altered interfacial ion and organic-molecule interactions to suppress both mineral scaling and biofouling."
-  - "On BSA-conditioned membranes, controlling crystal orientation mattered as much as reducing total mineral mass — BSA-conditioned surfaces resisted permeability loss even while accumulating twice the mineral deposit."
-  - "A combined graphene-oxide/polyacrylic-acid coating improved normalized water flux by roughly 15% in scaling tests and 10% in biofouling tests versus an uncoated membrane."
+  - "Zwitterionic amphiphilic copolymers altered interfacial ion and organic-molecule interactions, suppressing both mineral scaling and biofouling."
+  - "On BSA-conditioned membranes, crystal orientation mattered as much as total mineral mass: they resisted permeability loss despite accumulating twice the mineral deposit."
+  - "A graphene-oxide/polyacrylic-acid coating improved normalized water flux by roughly 15% in scaling tests and 10% in biofouling tests versus an uncoated membrane."
 figures:
   
   - image: "ZAC.png"
@@ -29,8 +29,4 @@ related_publications:
  
 
 ---
-Reverse-osmosis (RO) membranes are central to desalination and water reuse, yet organic fouling, biofouling, and mineral scaling remain persistent barriers that reduce flux, increase energy demand, and shorten membrane lifetime.
-
-To address these challenges, I investigated three membrane surface chemistries, including zwitterionic amphiphilic copolymers, adsorbed proteins, and polyacrylic acid/graphene oxide, using cross-scale characterization approaches spanning bench-scale RO systems, in situ GISAXS, and QCM-D.
-
-These complementary measurements connect surface chemistry and interfacial structure to membrane fouling and mineral scaling across diverse feed-water chemistries.
+Reverse-osmosis (RO) membranes are central to desalination and water reuse, but organic fouling, biofouling, and mineral scaling reduce flux and membrane lifetime. I studied three surface chemistries (zwitterionic amphiphilic copolymers, adsorbed proteins, and polyacrylic acid/graphene oxide) using bench-scale RO tests, in situ GISAXS, and QCM-D to link surface chemistry and interfacial structure to fouling and scaling across diverse feed waters.

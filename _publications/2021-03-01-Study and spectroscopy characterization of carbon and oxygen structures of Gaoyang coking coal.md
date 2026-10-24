@@ -1,6 +1,7 @@
 ---
 title: "Study and spectroscopy characterization of carbon and oxygen structures of Gaoyang coking coal"
 collection: publications
+hidden: true
 permalink: /publication/2021-03-01-Study and spectroscopy characterization of carbon and oxygen structures of Gaoyang coking coal
 date: 2021-03-01
 venue: 'Journal of China Coal Society (煤炭学报)'

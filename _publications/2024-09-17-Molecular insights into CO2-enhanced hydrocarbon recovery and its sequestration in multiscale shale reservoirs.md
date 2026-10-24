@@ -1,6 +1,7 @@
 ---
 title: "Molecular insights into CO2-enhanced hydrocarbon recovery and its sequestration in multiscale shale reservoirs"
 collection: publications
+hidden: true
 permalink: /publication/2024-09-17-Molecular insights into CO2-enhanced hydrocarbon recovery and its sequestration in multiscale shale reservoirs
 date: 2024-09-17
 venue: 'Chemical Engineering Journal'

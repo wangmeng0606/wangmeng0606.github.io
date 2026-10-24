@@ -1,11 +1,10 @@
-# main links links
+# main links
 main:
-  - title: "Home"
-    url: /
-
   - title: "Research"
-    url: /portfolio/
-   
-  - title: "Publications"
-    url: /publications/
+    url: /#research
 
+  - title: "Publications"
+    url: /#publications
+
+  - title: "News"
+    url: /#news
