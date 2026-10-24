@@ -15,8 +15,8 @@ redirect_from:
     <h1 id="home-heading">Ions, Interfaces, and Separation Processes</h1>
     <p class="home-hero__subheading">Bridging Molecular Science, Materials, and Environmental Engineering</p>
     <div class="home-hero__lead">
-    <p>I am a Postdoctoral Researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural
-  and Environmental Engineering</a> at The University of Texas at Austin, working with
+    <p>I am a postdoctoral researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural
+  and Environmental Engineering</a> at the University of Texas at Austin, working with
   <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>.
   I received my Ph.D. in Environmental Engineering from the <a href="https://www.cive.uh.edu/">University of Houston</a>
   in 2023, working with
@@ -55,7 +55,7 @@ redirect_from:
   </div>
   <div class="intro-copy">
     <p>Meng Wang is a postdoctoral researcher in the Department of Civil, Architectural and Environmental Engineering at The University of Texas at Austin, working with <a href="https://www.caee.utexas.edu/people/faculty/faculty-directory/katz">Dr. Lynn Katz</a>. My current work focuses on characterizing ion association and hydration in sulfate electrolyte systems using Raman and dielectric spectroscopy, and their role in predictive Pitzer thermodynamic modeling.</p>
-    <p>Meng Wang earned his Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Dr. Debora F. Rodrigues</a>. His doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination. Before that, he received his bachelor's degree from Northestearn Petroleum University and master's degree from China University of Petroleum in China. </p>
+    <p>Meng Wang earned his Ph.D. in Environmental Engineering from the University of Houston in 2023 with <a href="https://www.clemson.edu/cecas/departments/eees/people/facultydirectory/rodrigues.html">Dr. Debora F. Rodrigues</a>. His doctoral research investigated polymer and graphene-oxide membrane coatings for controlling mineral scaling and biofouling in desalination. Before that, he received his bachelor's degree from Northeast Petroleum University and master's degree from China University of Petroleum in China. </p>
   
   </div>
 </section> -->
