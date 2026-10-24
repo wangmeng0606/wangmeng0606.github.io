@@ -7,7 +7,7 @@
 
 body {
   background: $paper;
-  letter-spacing: -0.005em;
+  letter-spacing: 0;
   padding-bottom: 3.5em;
 }
 
@@ -15,7 +15,9 @@ h1,
 h2,
 h3 {
   color: $ink;
-  letter-spacing: -0.025em;
+  font-family: $serif;
+  letter-spacing: -0.02em;
+  font-weight: 500;
 }
 
 a {
@@ -34,7 +36,7 @@ button:focus-visible {
   border-bottom: 1px solid rgba($ink, 0.1);
   background: rgba($paper, 0.94);
   backdrop-filter: blur(14px);
-  box-shadow: 0 8px 30px rgba($ink, 0.035);
+  box-shadow: none;
 
   &__inner-wrap {
     max-width: 1180px;
@@ -48,7 +50,7 @@ button:focus-visible {
 
   a {
     color: $ink;
-    font-size: 0.82rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 0.025em;
   }
@@ -102,8 +104,8 @@ button:focus-visible {
 
 .page__title {
   margin-bottom: 1.25rem;
-  font-size: 2.6rem;
-  line-height: 1.05;
+  font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 .page__content {
@@ -244,12 +246,12 @@ button:focus-visible {
   position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 330px;
-  gap: 3.5rem;
+  gap: 3rem;
   align-items: center;
-  padding: 3rem;
-  border: 1px solid rgba($ink, 0.08);
-  border-radius: 18px;
-  background: $white;
+  padding: 2.5rem 1.5rem 3rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .home-hero__content,
@@ -261,15 +263,15 @@ button:focus-visible {
 .home-hero h1 {
   max-width: 760px;
   margin: 0;
-  font-size: 2.7rem;
-  line-height: 1.05;
+  font-size: clamp(1.75rem, 2.5vw, 2rem);
+  line-height: 1.16;
 }
 
 .home-hero__subheading {
   max-width: 700px;
   margin: 0.6rem 0 0;
   color: $ink-muted;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.3;
 }
@@ -374,7 +376,7 @@ button:focus-visible {
 }
 
 .home-section {
-  padding: 5rem 1.5rem;
+  padding: 3.5rem 1.5rem;
   border-bottom: 1px solid $border-color;
 }
 
@@ -387,7 +389,7 @@ button:focus-visible {
 .section-heading h2 {
   max-width: 610px;
   margin: 0;
-  font-size: 2.35rem;
+  font-size: 1.5rem;
   line-height: 1.12;
 }
 
@@ -428,13 +430,13 @@ button:focus-visible {
 }
 
 .focus-card {
-  min-height: 250px;
+  min-height: 210px;
   padding: 1.7rem;
   border: 1px solid $border-color;
-  border-top: 3px solid $accent;
-  border-radius: 18px;
+  border-top: 2px solid $accent-soft;
+  border-radius: 6px;
   background: $white;
-  box-shadow: 0 14px 35px rgba($ink, 0.045);
+  box-shadow: none;
 
   h3 {
     margin: 1.4rem 0 0.6rem;
@@ -589,10 +591,9 @@ button:focus-visible {
 
 .page-intro {
   margin-bottom: 2rem;
-  padding: 1.7rem 1.8rem;
-  border-left: 4px solid $accent;
-  border-radius: 0 16px 16px 0;
-  background: $paper-deep;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid $border;
+  background: transparent;
 
   .eyebrow {
     margin-bottom: 0.5rem;
@@ -604,8 +605,8 @@ button:focus-visible {
   margin: 0;
   color: $ink;
   font-family: $sans-serif;
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1.0625rem;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -635,7 +636,7 @@ button:focus-visible {
   margin-bottom: 2rem;
   padding: 2.4rem;
   border: 1px solid $border;
-  border-radius: 18px;
+  border-radius: 6px;
   background: $white;
   scroll-margin-top: 1.5rem;
 
@@ -936,7 +937,7 @@ button:focus-visible {
 .publication-year-list {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1003,7 +1004,7 @@ button:focus-visible {
   }
 
   .home-hero h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .home-hero__subheading {
@@ -1046,7 +1047,7 @@ button:focus-visible {
   }
 
   .home-hero h1 {
-    font-size: 2.05rem;
+    font-size: 1.75rem;
   }
 
   .home-hero__subheading {
@@ -1126,7 +1127,7 @@ button:focus-visible {
   }
 
   .page__title {
-    font-size: 2.1rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -1140,3 +1141,195 @@ button:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Shared editorial typography; keep rem sizing consistent on every screen. */
+html { font-size: 16px; }
+body { font-size: 1.0625rem; line-height: 1.7; }
+.button { font-size: 0.875rem; font-weight: 600; }
+.text-link, .publication-link { font-size: 0.9375rem; font-weight: 500; }
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.1em; }
+.focus-card p, .featured-news-item p { font-size: 0.9375rem; }
+.featured-publication__meta, .featured-news-item__meta { font-size: 0.8125rem; }
+.portrait-note span, .page__footer-copyright { font-size: 0.8125rem; }
+.research-program__findings h3 { font-family: $sans-serif; font-size: 0.8125rem; }
+.research-program__question, .research-program__contribution,
+.research-program__findings ul, .research-program__pubs { font-size: 1rem; }
+.research-program--compact .research-program__question,
+.research-program--compact .research-program__contribution,
+.research-program--compact .research-program__findings ul,
+.research-program--compact .research-program__pubs { font-size: 0.9375rem; }
+
+/* Research and publication indexes share a centered reading column. */
+#main.wide-archive {
+  max-width: 1050px;
+  padding: 0 24px;
+  margin: 3rem auto 0;
+}
+.wide-archive .archive {
+  float: none;
+  width: 100%;
+  padding: 0 0 2rem;
+  margin-right: 0;
+}
+.wide-archive .page__title { margin-bottom: 0.75rem; }
+.publications-intro {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 1.75rem;
+  color: $ink-muted;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.publications-intro p { margin: 0; max-width: 720px; }
+.publications-intro a { white-space: nowrap; }
+.publication-year-group { padding: 1.5rem 0 0; border-bottom: 0; }
+.publication-year-heading {
+  font-family: $sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.publication-entry {
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 1px solid $border;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+.publication-entry__title {
+  margin: 0 0 0.4rem;
+  font-family: $sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.publication-entry__title a { color: $ink; }
+.publication-entry__title a:hover { color: $accent-dark; }
+.publication-entry__authors, .publication-entry__details {
+  margin: 0;
+  color: $ink-muted;
+  overflow-wrap: anywhere;
+}
+.publication-entry__authors strong { color: $ink; font-weight: 600; }
+.publication-entry__details { margin-top: 0.2rem; }
+.publication-entry__doi { display: inline-block; margin-left: 0.65rem; font-weight: 500; }
+.publication-legend { margin: 1.5rem 0 0; font-size: 0.8125rem; }
+.publication-year-group--in-prep { margin-top: 1.25rem; }
+
+@media (max-width: 700px) {
+  #main.wide-archive { padding: 0 20px; margin-top: 2rem; }
+  .publications-intro { flex-direction: column; gap: 0.75rem; }
+  .page__title { font-size: 1.625rem; }
+  .publication-entry__title { font-size: 1.125rem; }
+  .home-hero { padding: 1.5rem 0.5rem 2rem; }
+  .home-hero h1 { font-size: 1.75rem; }
+  .home-hero__lead { font-size: 1rem; }
+  .research-program { padding: 1.25rem; }
+  .research-program--compact { padding: 1.25rem; }
+}
+
+/* Compact, neutral typography and homepage profile links. */
+.home-hero h1 { font-weight: 500; line-height: 1.25; letter-spacing: -0.025em; }
+.home-hero__subheading { font-size: 1.125rem; line-height: 1.5; }
+.section-heading h2 { font-size: 1.5rem; line-height: 1.3; }
+.research-program__title { font-size: 1.25rem; font-weight: 600; }
+.publication-entry__title { font-size: 1.0625rem; font-weight: 600; line-height: 1.5; }
+.page__footer-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.page__footer-links { display: flex; align-items: center; gap: 0.9rem; margin-right: 8%; }
+.page__footer-links a { display: inline-flex; color: $ink-muted; transition: color 0.15s; }
+.page__footer-links a:hover { color: $accent; }
+.page__footer-links svg { width: 1.125rem; height: 1.125rem; }
+@media (max-width: 700px) {
+  .page__footer-links { margin-right: 0; }
+}
+
+
+
+/* Type scale bump for IBM Plex Sans / Newsreader, and calmer research figures. */
+body { font-size: 1.125rem; }
+.home-hero__subheading { font-size: 1.375rem; }
+.home-hero__lead { font-size: 1.1875rem; }
+.page-intro__lead { font-size: 1.1875rem; }
+.section-heading h2 { font-size: 1.875rem; }
+.focus-card p, .featured-news-item p { font-size: 1.0625rem; }
+.featured-publication__meta, .featured-news-item__meta { font-size: 0.9375rem; }
+.text-link, .publication-link { font-size: 1.0625rem; }
+.button { font-size: 0.9375rem; }
+.eyebrow { font-size: 0.8125rem; }
+.publication-entry__title { font-size: 1.1875rem; }
+.research-jumpnav { font-size: 0.9375rem; }
+.research-program__label { font-size: 0.75rem; }
+.research-program__title { font-size: 1.75rem; font-weight: 500; }
+.research-program--compact .research-program__title { font-size: 1.5rem; }
+.research-program__findings h3 { font-size: 0.875rem; }
+.research-program__question, .research-program__contribution,
+.research-program__findings ul, .research-program__pubs { font-size: 1.0625rem; }
+.research-program--compact .research-program__question,
+.research-program--compact .research-program__contribution,
+.research-program--compact .research-program__findings ul,
+.research-program--compact .research-program__pubs { font-size: 1rem; }
+.portrait-note span, .page__footer-copyright { font-size: 0.875rem; }
+
+.research-carousel { max-width: 640px; margin: 0 auto 1.8rem; }
+.research-carousel__slide img {
+  max-height: 340px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Research page: indent intro text to line up with the text inside the program cards. */
+.research-carousel { margin: 0 auto 1.8rem; }
+.research-carousel__slide img { margin: 0 auto; }
+.page-intro__lead { max-width: none; padding: 0 2.4rem; text-align: justify; hyphens: auto; }
+.research-jumpnav { padding-left: 2.4rem; }
+.research-program__pubs .publication-entry__doi { margin-left: 0.4rem; white-space: nowrap; }
+@media (max-width: 700px) {
+  .page-intro__lead { padding: 0 1.25rem; }
+  .research-jumpnav { padding-left: 1.25rem; }
+}
+
+/* Section labels inside program cards: same size and case as "Research question". */
+.research-program__findings h3,
+.research-program__pubs h4 {
+  font-family: $sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.research-program--compact .research-program__findings h3,
+.research-program--compact .research-program__pubs h4 { font-size: 1rem; }
+
+/* Program cards: one background, one body text style. */
+.research-program, .research-program--compact { background: $paper-deep; }
+.research-program__question,
+.research-program__contribution,
+.research-program__findings ul,
+.research-program__pubs {
+  font-family: $sans-serif;
+  color: $ink-muted;
+  line-height: 1.7;
+}
+.research-program__question strong { color: $ink; font-weight: 600; }
+.research-program__contribution p { font-size: inherit; line-height: inherit; }
+.research-program--compact .research-program__question,
+.research-program--compact .research-program__contribution,
+.research-program--compact .research-program__findings ul,
+.research-program--compact .research-program__pubs { font-size: 1.0625rem; }
+.research-program--compact .research-program__findings h3,
+.research-program--compact .research-program__pubs h4 { font-size: 1.0625rem; }
+
+/* Larger navigation links. */
+.greedy-nav a { font-size: 1.0625rem; }
+.greedy-nav .visible-links li:first-child a { font-size: 1.25rem; }
+
+/* Subscripts (chemical formulas) should not push line spacing apart. */
+sub, sup { line-height: 0; }

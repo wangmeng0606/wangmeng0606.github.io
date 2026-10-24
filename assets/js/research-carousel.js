@@ -3,7 +3,7 @@
    image is an optional shortcut to the previous/next slide. Autoplay advances
    on a timer, loops, and resets whenever the user interacts manually. */
 (function () {
-  var AUTOPLAY_DELAY_MS = 4500;
+  var AUTOPLAY_DELAY_MS = 2000;
   var prefersReducedMotion = window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 

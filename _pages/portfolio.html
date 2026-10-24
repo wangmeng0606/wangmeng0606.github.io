@@ -2,12 +2,12 @@
 layout: archive
 title: "Research"
 permalink: /portfolio/
-author_profile: true
+author_profile: false
+wide_archive: true
 excerpt: "Research on ion transport, interfacial chemistry, mineral scaling, and membrane materials."
 ---
 
 <div class="page-intro">
-  <p class="eyebrow">Research</p>
   <p class="page-intro__lead">My research investigates how molecular interactions in aqueous and interfacial systems govern speciation, transport, and separation performance. I combine spectroscopy, thermodynamic modeling, and multiscale experiments to connect molecular-scale behavior with membrane separations, resource recovery, and scaling/fouling control at the water–energy nexus.</p>
 </div>
 
@@ -81,14 +81,9 @@ excerpt: "Research on ion transport, interfacial chemistry, mineral scaling, and
           <h4>Related publications</h4>
           <ul>
             {% for pub in related_pubs_sorted %}
-              {% assign pub_slug = pub.title | slugify %}
-              {% assign pub_has_doi = false %}
-              {% if pub.paperurl and pub.paperurl != "" %}{% assign pub_has_doi = true %}{% endif %}
-              {% assign pub_link = pub.paperurl %}
-              {% unless pub_has_doi %}{% assign pub_link = "/publications/#pub-" | append: pub_slug %}{% endunless %}
               <li>
                 {{ pub.authors_full }} ({{ pub.date | date: "%Y" }}). {{ pub.title }}. <i>{% if pub.venue and pub.venue != "" %}{{ pub.venue }}{% else %}TBD{% endif %}</i>{% if pub.note %} ({{ pub.note }}){% endif %}{% if pub.status %} ({{ pub.status }}){% endif %}.
-                <a href="{{ pub_link }}">{% if pub_has_doi %}{{ pub.paperurl }}{% else %}[DOI pending]{% endif %}</a>
+                {% if pub.paperurl and pub.paperurl != "" %}<a class="publication-entry__doi" href="{{ pub.paperurl }}" aria-label="Publisher link for {{ pub.title | escape }}">{% if pub.paperurl contains 'doi.org' %}DOI{% else %}Publisher{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
               </li>
             {% endfor %}
           </ul>

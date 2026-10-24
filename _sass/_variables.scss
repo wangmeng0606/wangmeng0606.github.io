@@ -13,8 +13,8 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Source Serif 4", Georgia, Times, serif;
-$sans-serif                 : "Manrope", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$serif                      : "Newsreader", Georgia, Times, serif;
+$sans-serif                 : "IBM Plex Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
@@ -29,7 +29,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : $serif;
 $caption-font-family        : $sans-serif;
 
 /* type scale */
@@ -48,18 +48,18 @@ $type-size-8                : 0.625em;  // ~10px
    ========================================================================== */
 
 /* Academic color system — single source of truth for the site palette.
-   "Oxblood Archive": warm, restrained, one muted burgundy accent. Consumed directly by _custom.scss. */
-$paper                      : #f8f5f0;  // page background — warm off-white
-$paper-deep                 : #f0ebe2;  // secondary warm-neutral surface (subtle shading)
+   Neutral editorial palette: white surfaces and charcoal accents. Consumed directly by _custom.scss. */
+$paper                      : #ffffff;  // page background
+$paper-deep                 : #f5f5f5;  // secondary neutral surface
 $white                      : #ffffff;  // card / surface white
-$ink                        : #201d1b;  // primary text & headings — deep warm charcoal
-$ink-muted                  : #6a655f;  // secondary/muted text — warm gray
-$border                     : #e6e0d6;  // borders / dividers — very light warm gray
-$accent                     : #6f2436;  // one muted, dark oxblood/burgundy accent
-$accent-dark                : #4c1725;  // accent hover / active state
-$accent-soft                : #c9a4ac;  // pale tint of the accent, for use on dark surfaces only
+$ink                        : #292929;  // primary text and headings
+$ink-muted                  : #616161;  // secondary text
+$border                     : #e6e6e6;  // subtle dividers
+$accent                     : #404040;  // charcoal links and buttons
+$accent-dark                : #171717;  // hover and active state
+$accent-soft                : #d4d4d4;  // light accent on dark surfaces
 
-$gray                       : #8c8680;
+$gray                       : #888888;
 $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);

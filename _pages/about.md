@@ -132,15 +132,3 @@ redirect_from:
     {% endfor %}
   </div>
 </section>
-
-<!-- <section class="home-contact" aria-labelledby="connect-heading">
-  <div>
-    <p class="eyebrow">Connect</p>
-    <h2 id="connect-heading">Interested in collaboration or research opportunities?</h2>
-  </div>
-  <div class="home-contact__links">
-    <a href="{{ site.author.googlescholar }}">Google Scholar <span aria-hidden="true">↗</span></a>
-    <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn <span aria-hidden="true">↗</span></a>
-    <a href="{{ site.author.orcid }}">ORCID <span aria-hidden="true">↗</span></a>
-  </div>
-</section> -->
