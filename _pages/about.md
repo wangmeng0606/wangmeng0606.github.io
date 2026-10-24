@@ -12,7 +12,7 @@ redirect_from:
 <section class="home-hero" aria-labelledby="home-heading">
   <div class="home-hero__content">
     <p class="eyebrow">Solution/Interfacial Chemistry · Materials and Modeling · Water &amp; Energy</p>
-    <h1 id="home-heading">Understanding molecule interactions and transport </h1>
+    <h1 id="home-heading">Understanding molecular interactions and transport</h1>
     <p class="home-hero__subheading">Designing next-generation separation and energy systems</p>
     <div class="home-hero__lead">
     <p>Meng Wang is a Postdoctoral Researcher in the <a href="https://cwe.engr.utexas.edu/">Department of Civil, Architectural

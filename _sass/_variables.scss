@@ -13,7 +13,7 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : "Newsreader", Georgia, Times, serif;
+$serif                      : "IBM Plex Sans", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $sans-serif                 : "IBM Plex Sans", -apple-system, ".SFNSText-Regular", "San Francisco", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
@@ -49,8 +49,8 @@ $type-size-8                : 0.625em;  // ~10px
 
 /* Academic color system — single source of truth for the site palette.
    Neutral editorial palette: white surfaces and charcoal accents. Consumed directly by _custom.scss. */
-$paper                      : #ffffff;  // page background
-$paper-deep                 : #f5f5f5;  // secondary neutral surface
+$paper                      : #f7f6f3;  // page background (very light warm gray)
+$paper-deep                 : #f1f0ed;  // secondary neutral surface
 $white                      : #ffffff;  // card / surface white
 $ink                        : #292929;  // primary text and headings
 $ink-muted                  : #616161;  // secondary text

@@ -17,9 +17,9 @@ key_findings:
 
 figures:
   - image: "IP_Implication.png"
-    alt: "what is IP implication for speciration"
+    alt: "Sulfate species distribution in river water, groundwater, seawater, acid mine drainage, and produced waters"
   - image: "Ion_Pair.png"
-    alt: "Ion pairing and its characterization"
+    alt: "Ion pairing (SSIP, SIP, CIP) characterized by dielectric and Raman spectroscopy"
   # - image: "IP_IEM.png"
   #   alt: "what is IP implication for IEM"
 
@@ -33,7 +33,8 @@ related_publications:
   - /publication/2026-09-01-Unraveling Ion Pairing and Hydration Structure of Sulfate Salts in Aqueous Solution From Monovalent to Trivalent Ions
   - /publication/2026-01-02-Incorporating ion pairing into an extended Pitzer model for activity coefficients
 ---
-Ion pairing governs the chemical speciation that underlies many processes central to 
-environmental processes, including contaminant transport, membrane separation, mineral 
-precipitation, and the electro-catalytic efficiency of electrochemical treatment in settings such as 
-wastewater treatment, critical mineral recovery, and energy storage systems, where ion concentrations are often high. Yet these molecular interactions are often neglected or treated implicitly in conventional thermodynamic models. I use Raman and dielectric spectroscopy to resolve ion pairing and hydration structure in sulfate electrolytes spanning monovalent to trivalent cations, then incorporate these effects into an extended Pitzer model for activity coefficients, thus connecting molecular-scale speciation to a predictive thermodynamic framework for ion transport in engineered water and energy systems.
+Ion pairing governs the chemical speciation that underlies many environmental processes, including contaminant transport, membrane separation, mineral precipitation, and the electro-catalytic efficiency of electrochemical treatment in settings such as wastewater treatment, critical mineral recovery, and energy storage systems, where ion concentrations are often high.
+
+Yet these molecular interactions are often neglected or treated implicitly in conventional thermodynamic models.
+
+I use Raman and dielectric spectroscopy to resolve ion pairing and hydration structure in sulfate electrolytes spanning monovalent to trivalent cations, then incorporate these effects into an extended Pitzer model for activity coefficients, thus connecting molecular-scale speciation to a predictive thermodynamic framework for ion transport in engineered water and energy systems.

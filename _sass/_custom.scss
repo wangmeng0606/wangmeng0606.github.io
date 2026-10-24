@@ -1340,3 +1340,89 @@ sub, sup { line-height: 0; }
 @media (max-width: 700px) {
   .publication-entry__title { font-size: 1.25rem; }
 }
+
+/* ==========================================================================
+   Unified system: IBM Plex Sans only, charcoal text, white content on a very
+   light warm-gray page. Keep this block last so it wins over earlier tweaks.
+   ========================================================================== */
+body { font-family: $sans-serif; font-weight: 400; background: $paper; }
+h1, h2, h3, h4,
+.page__title, .home-hero h1, .section-heading h2,
+.research-program__title, .publication-year-heading,
+.publication-entry__title, .home-hero__subheading {
+  font-family: $sans-serif;
+}
+h1, h2, h3, h4 { font-weight: 600; letter-spacing: -0.01em; }
+
+/* Size scale */
+.home-hero h1 { font-size: clamp(1.75rem, 3vw, 1.875rem); font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+.page__title { font-size: 1.75rem; font-weight: 600; }
+.publication-entry__title { font-size: 1.125rem; font-weight: 400; line-height: 1.45; letter-spacing: 0; }
+.publication-entry__authors, .publication-entry__details { font-size: 1rem; }
+.publication-year-heading { font-size: 1.25rem; font-weight: 600; }
+.research-program__title { font-weight: 600; }
+.section-heading h2 { font-weight: 600; }
+
+/* Home hero: name and position first, research themes second */
+.home-hero__position { margin: 0.35rem 0 1.5rem; font-size: 1.1875rem; font-weight: 500; color: $ink; }
+.home-hero__subheading { font-size: 1.25rem; font-weight: 500; line-height: 1.5; color: $ink-muted; }
+.home-hero .eyebrow { margin-bottom: 0.6rem; }
+
+/* White content surfaces, fewer shadows and heavy borders */
+.research-program, .research-program--compact,
+.featured-publication, .focus-card, .featured-news-item,
+.archive .list__item { background: $white; box-shadow: none; }
+.research-program { border: 1px solid $border; border-radius: 8px; }
+.button--primary, .portrait-frame, .sidebar .author__avatar img { box-shadow: none; }
+.greedy-nav .hidden-links { box-shadow: 0 4px 12px rgba($ink, 0.08); }
+.masthead { background: rgba($paper, 0.96); }
+
+/* Current page indicator in the navigation */
+.greedy-nav .visible-links li:not(:first-child) a.is-current { color: $accent-dark; }
+.greedy-nav .visible-links li:not(:first-child) a.is-current:before {
+  height: 2px;
+  background: $accent-dark;
+  transform: scaleX(1);
+}
+
+/* Research page structure: topic, question, figure, findings, publications */
+.research-program__header { margin-bottom: 0.75rem; }
+.research-program__question { max-width: 860px; margin: 0 0 1.5rem; }
+.research-carousel { max-width: 640px; margin: 0 auto 1.75rem; }
+.research-carousel__slide img { max-height: none; width: 100%; height: auto; border: 1px solid $border; border-radius: 6px; background: $white; }
+.research-carousel__slide figcaption { margin-top: 0.6rem; font-size: 0.9375rem; font-style: normal; text-align: center; color: $ink-muted; }
+.research-program__contribution p { margin: 0; }
+.research-program__contribution p + p { margin-top: 0.85rem; }
+.research-program__contribution { margin-bottom: 1.5rem; }
+.research-program__more { margin-top: 0.75rem; }
+.research-program__more summary { cursor: pointer; font-size: 1rem; font-weight: 500; color: $accent; }
+.research-program__more summary:hover { text-decoration: underline; text-underline-offset: 3px; }
+.research-program__more ul { margin-top: 0.75rem; }
+.research-program__pubs h3, .research-program__findings h3 { margin: 0 0 0.6rem; }
+.research-program__pubs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+
+@media (max-width: 700px) {
+  .home-hero h1 { font-size: 1.75rem; }
+  .publication-entry__title, .research-program__question { overflow-wrap: anywhere; }
+  .publication-entry__title { font-size: 1.0625rem; }
+  .page__title { font-size: 1.625rem; }
+  .research-carousel { max-width: 100%; }
+}
+
+/* Paper titles stay regular weight; keep the news list at its previous weight. */
+.featured-publication h3 { font-weight: 400; }
+.featured-news-item h3 { font-weight: 500; }
+
+@media (max-width: 700px) {
+  .page-intro__lead { text-align: left; hyphens: manual; }
+}
+
+/* Publications page type size. */
+.publication-entry__title { font-size: 1.25rem; line-height: 1.4; }
+.publication-entry__authors, .publication-entry__details { font-size: 1.0625rem; }
+.publication-entry__doi { font-size: 1.0625rem; }
+.publication-year-heading { font-size: 1.375rem; }
+@media (max-width: 700px) {
+  .publication-entry__title { font-size: 1.125rem; }
+  .publication-entry__authors, .publication-entry__details, .publication-entry__doi { font-size: 1rem; }
+}

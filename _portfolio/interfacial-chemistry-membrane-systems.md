@@ -19,7 +19,7 @@ figures:
   - image: "Orientation.png"
     alt: "Comparison of mineral crystal orientation and coverage on bare versus BSA-conditioned membranes"
   - image: "GO.jpg"
-    alt: "PAA functionlaized GO membrane combat mineral scaling and biofouling "
+    alt: "PAA-functionalized GO membrane coating to combat mineral scaling and biofouling"
 related_publications:
 
    - /publication/2025-05-06-Organic fouling on zwitterionic amphiphilic copolymers implications in biofouling
@@ -29,5 +29,8 @@ related_publications:
  
 
 ---
-Reverse-osmosis (RO) membranes are central to desalination and water reuse, yet organic fouling, biofouling, and mineral scaling remain persistent barriers that reduce flux, increase energy demand, and shorten membrane lifetime. To address these challenges, I investigated three membrane surface chemistries, including zwitterionic amphiphilic copolymers, adsorbed proteins, and polyacrylic acid/graphene oxide, using cross-scale characterization approaches spanning bench-scale RO systems, in situ GISAXS, and QCM-D. These complementary measurements connect surface chemistry and interfacial structure to membrane fouling and mineral scaling across diverse feed-water chemistries.
+Reverse-osmosis (RO) membranes are central to desalination and water reuse, yet organic fouling, biofouling, and mineral scaling remain persistent barriers that reduce flux, increase energy demand, and shorten membrane lifetime.
 
+To address these challenges, I investigated three membrane surface chemistries, including zwitterionic amphiphilic copolymers, adsorbed proteins, and polyacrylic acid/graphene oxide, using cross-scale characterization approaches spanning bench-scale RO systems, in situ GISAXS, and QCM-D.
+
+These complementary measurements connect surface chemistry and interfacial structure to membrane fouling and mineral scaling across diverse feed-water chemistries.
